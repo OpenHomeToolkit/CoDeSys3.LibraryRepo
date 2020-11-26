@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="CAA CanOpen Stack, 3.5.7.0 (CAA Technical Workgroup)">
+  <Node Name="Stack Handling" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{f8db039a-69c6-4306-92ce-7b1170d6348f}" />
+  <Node Name="SDO Handling" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{c2943ffe-14cb-46b2-a187-34cbf2527538}" />
+  <Node Name="STK_INFO" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" CANOpen Stack Information " ObjectGUID="{afd61eca-c949-4621-94c4-8427f88a26ca}" />
+  <Node Name="SDO_WRITE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Structure is only compatible with 3.5 SP7 runtime or newer" ObjectGUID="{8f9a7745-9bfe-4767-a1d1-8b4daaa3d588}" />
+  <Node Name="SDO_READ" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Structure is only compatible with 3.5 SP7 runtime or newer" ObjectGUID="{33476ccb-33bf-410b-b169-f0e0c8d5bd0c}" />
+  <Node Name="SDO_ABORT" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{ffbde9c5-9213-4a11-bd4c-db338e753847}" />
+  <Node Name="NET_INFO" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" CANOpen Channel Information " ObjectGUID="{d73a30fc-d9c5-4e5a-bf88-b43f7fcdabc0}" />
+  <Node Name="EMCY_ERROR" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" imported from CAA_CiA405 " ObjectGUID="{991e5486-ef75-45f9-a348-698890e95e3f}" />
+  <Node Name="EMCY_DATA" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1f6b571d-1554-455b-ba09-2b21d17aff17}" />
+  <Node Name="ICanOpenStack" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f57ca7f3-840f-461d-9b3d-593c0a5608b5}">
+    <Node Name="StkOpen" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{8efd3c99-e213-4e5f-bb2d-93344ab6b401}" />
+    <Node Name="StkGetInfo" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Present the results and states of a CANopen Stack handle " ObjectGUID="{f6cae742-beda-4e40-9565-e4d4cbc9fedf}" />
+    <Node Name="StkClose" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Dispose all resources of the CANopen Stack " ObjectGUID="{42e1292c-7825-432b-aa8c-afe8e4f8d9cf}" />
+    <Node Name="SdoWrite" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" The SDO download protocol " ObjectGUID="{fddff650-b5a0-4b5e-8b74-ef9166684298}" />
+    <Node Name="SdoRead" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" The SDO upload protocol " ObjectGUID="{c516a186-636e-4b39-9302-59329b39120b}" />
+    <Node Name="SdoAbort" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Abort all actual running actions of SDO's " ObjectGUID="{93fa53e5-418a-4cb8-8e65-aabc7fb7b50b}" />
+  </Node>
+  <Node Name="ObjectDictionary" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Object Dictionary " ObjectGUID="{60059144-67b4-4b32-87f3-7c166796841d}" />
+  <Node Name="STK_STATE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0e6386f8-1817-46ec-9662-4aca1483aa24}" />
+  <Node Name="STK_SPEC" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{ad333fad-07a8-4403-b5fe-fa138fae5b6c}" />
+  <Node Name="STK_NODES" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Symbolic NodeId's of a CANopen Network " ObjectGUID="{a44238b6-45bf-4e27-b076-f72ae0079be1}" />
+  <Node Name="SDO_MODE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2728b817-c4bb-4502-8109-46dda59994fa}" />
+  <Node Name="PROC_STATE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{099e50fd-afc7-47c9-a351-6f3017e8a668}" />
+  <Node Name="PROC_CMD" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c6d1acd1-ee3a-4ccd-8f66-9666acafa809}" />
+  <Node Name="ERROR" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c5649f37-5d11-4fee-9aa2-f63ff5ef3b4f}" />
+  <Node Name="DEVICE_STATE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" imported from CAA_CiA405 " ObjectGUID="{128bc579-4ee9-458b-87dc-c75fb6cffedd}" />
+  <Node Name="CANOPEN_KERNEL_ERROR" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Error codes for output ERROR of CiA405 function blocks" ObjectGUID="{eb216ddf-59e4-4669-b666-ec47cd9f6d07}" />
+  <Node Name="BUSSTATE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" imported from CAA_CanL2 " ObjectGUID="{44d5879a-5586-4571-9467-ef379af367e4}" />
+  <Node Name="Structs" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{144dc72c-d9c9-4ac6-8064-509024c217b3}" />
+  <Node Name="Interfaces" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{4ce91f25-b1c1-4cf0-9686-13f671b37865}" />
+  <Node Name="GlobalConstants" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{bcc89a36-5ec9-4e41-8bf5-5ba01fb9ad52}" />
+  <Node Name="Enums" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{1ce6043f-f918-4be4-9506-39503d7d8513}" />
+  <Node Name="VersionConstants" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d91a83ec-d559-4395-8d06-e1dd3aebd716}" />
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{445dd0cd-cc62-4a1e-b9f7-d4200f4bcdfa}" />
+  <Node Name="GetSupplierVersion" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{b325a742-f054-48e1-83d3-526dda29e744}" />
+  <Node Name="CAA CANopen Stack" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{3b39a79d-6af6-4077-a8dd-d9cc247e99f3}" />
+</Library>

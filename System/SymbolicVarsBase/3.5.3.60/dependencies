@@ -1,0 +1,11 @@
+#CmpApp
+#Collections
+#Standard
+#SysMem
+#SysCpuHandling
+IecVarAccess Interfaces, * (System)
+Base Interfaces, * (System)
+Collections Interfaces, * (System)
+CmpErrors Interfaces, * (System)
+SysTypes Interfaces, * (System)
+#IecTypes

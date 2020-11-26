@@ -1,0 +1,25 @@
+#IoStandard
+#Standard
+#SysCpuHandling
+#CmpSchedule
+#SM3_Shared
+#FloatingPointUtils
+#SysMem
+#CmpApp
+#SysTarget
+#3SLicense#97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b
+CmpErrors2 Interfaces, * (System)
+SysTypes2 Interfaces, * (System)
+#CmpLog
+#System_VisuElems#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemMeter#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsSpecialControls#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsWinControls#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemTextEditor#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemTrace#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuNativeControl#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsAlarm#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemCamDisplayer#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElem3DPath#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsDateTime#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#system_visuinputs#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae

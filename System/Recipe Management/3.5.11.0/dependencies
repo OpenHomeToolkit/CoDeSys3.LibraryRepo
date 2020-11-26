@@ -1,0 +1,15 @@
+#SysMem
+#SysDir
+#CmpLog
+#Standard
+#SysSem
+#StringUtils
+#SysFile
+SysTypes2 Interfaces, * (System)
+Visu Interfaces, * (System)
+#FloatingPointUtils
+#Collections
+Datasources Interfaces, * (3S - Smart Software Solutions GmbH)
+#VisuUtils
+#TextListUtils
+#CmpIecTask

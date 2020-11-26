@@ -1,0 +1,9 @@
+Standard, 3.0.1.0 (System)
+Monitoringdata Interfaces 2, * (System)
+#SysTime
+#SysFile
+#CmpChannelClientIec
+#CmpLog
+#CmpBinTagUtilIec
+#SysMem
+Collections, 3.3.0.0 (System)

@@ -1,0 +1,9 @@
+#SysTarget
+#SysFile
+#CmpLog
+#CAA Types
+#Standard
+#Component Manager
+#CmpApp
+CmpErrors Interfaces, * (System)
+SysTypes Interfaces, * (System)

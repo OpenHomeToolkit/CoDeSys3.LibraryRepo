@@ -1,0 +1,27 @@
+#IoStandard
+#CmpLog
+#Standard
+#IoDrvBase
+#Component Manager
+#SysMem
+#CmpSchedule
+#SysTime
+#SysCpuHandling
+#CmpBinTagUtilIec
+#CmpSrv
+#Rts Service Handler
+#SysTarget
+#3SLicense#97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b
+#CmpSettings
+#CmpSysEthernet
+#CAA Behaviour Model
+#CAA Device Diagnosis
+#CAA Types
+#CmpEventMgr
+#SysTimeRtc
+IoDriver Parameter Interfaces, * (System)
+Base Interfaces, * (System)
+IoDriver Interfaces, * (System)
+#CmpIecTask
+SysTypes2 Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)

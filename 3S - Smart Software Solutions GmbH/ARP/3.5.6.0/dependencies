@@ -1,0 +1,6 @@
+#Standard
+#IoStandard
+#CmpSysEthernet
+#SysMem
+#MemoryUtils
+CmpErrors2 Interfaces, * (System)

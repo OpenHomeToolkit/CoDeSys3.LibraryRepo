@@ -1,0 +1,19 @@
+#CAA Types
+#CmpLog
+#CmpSrv
+#CmpBinTagUtilIec
+#SysTarget
+#IoStandard
+#Standard
+#SysTime
+#SysShm
+#SysMem
+#Component Manager
+#Rts Service Handler
+#CmpEventMgr
+#CmpIecTask
+CmpErrors2 Interfaces, * (System)
+SysTypes2 Interfaces, * (System)
+#SNCM_ECATSlave
+SNCM ECATSlave Interfaces, * (3S - Smart Software Solutions GmbH)
+#SysTask

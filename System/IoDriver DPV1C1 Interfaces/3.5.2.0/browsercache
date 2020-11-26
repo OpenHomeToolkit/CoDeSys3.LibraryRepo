@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="IoDriver DPV1C1 Interfaces, 3.5.2.0 (System)">
+  <Node Name="ICmpIoDrvDPV1C1Master" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{68dd82ee-144c-4dd2-bab0-9ee5d2cb2f4a}">
+    <Node Name="IoDrvDPV1_C1_M_Read" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c4fa5475-7ee7-4b51-833f-25d6ef8c8c0d}" />
+    <Node Name="IoDrvDPV1_C1_M_Alarm" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{113a634d-a2f8-48cc-995f-9910f2b338be}" />
+    <Node Name="IoDrvDPV1_C1_M_Status" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{edbdf24d-e1ce-454a-9fd4-41fa07e954d5}" />
+    <Node Name="IoDrvDPV1_C1_M_AlarmAck" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{4629fa74-5f00-40fe-84b8-0e16538f89c8}" />
+    <Node Name="IoDrvDPV1_C1_M_Write" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{95a59893-ae9c-4723-9a87-8df98964dc30}" />
+  </Node>
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{bd9627e1-5ad5-470f-baee-c352761b8b3b}" />
+  <Node Name="OperatingStates" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{aaca02f4-c68a-44ea-b3c3-9057552791e0}" />
+  <Node Name="DPV1_C1_Write" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c5182ff6-8a09-4ec9-a4cb-86f0c676d0fa}" />
+  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="DPV1_C1_Status" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{bc087068-dfd9-4179-b771-b68dc7153099}" />
+  <Node Name="ICmpIoDrvDPV1C1Slave" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7345a13a-bc66-4129-886c-60126baf2417}">
+    <Node Name="IoDrvDPV1_C1_S_RegisterRecvCallback" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{475b98fc-fb37-41ee-b2a8-1187ba57512a}" />
+    <Node Name="IoDrvDPV1_C1_S_UnregisterRecvCallback" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6d270ee0-8302-4f7b-adf1-848b586515b2}" />
+    <Node Name="IoDrvDPV1_C1_S_Write" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b3d2bc84-3baa-4d7e-90d3-c5fd4d0d3b22}" />
+  </Node>
+  <Node Name="DPV1_C1_Alarm" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e773b347-ef72-41fc-9509-ca1cafc2feee}" />
+  <Node Name="DPV1_C1_Read" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{90ebfc1d-2357-4e5d-a8c3-f9be4306c0f7}" />
+  <Node Name="InterfaceIDs" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{690812de-0c9b-458d-9428-b9c43409c083}" />
+  <Node Name="DPV1_C1_AlarmAck" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{59f4b444-2b75-4ed5-bf6a-56810d6fa903}" />
+</Library>

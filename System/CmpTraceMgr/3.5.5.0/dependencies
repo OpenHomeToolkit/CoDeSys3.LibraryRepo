@@ -1,0 +1,4 @@
+#SysTime
+Base Interfaces, * (System)
+SysTypes2 Interfaces, * (System)
+IecVarAccess2 Interfaces, * (System)

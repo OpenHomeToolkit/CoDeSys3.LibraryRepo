@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="SysGetAddress23, 3.3.1.10 (System)">
+  <Node Name="Visualizations" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{ad22e60e-d1e7-4c18-95af-09d104f30f1d}" />
+  <Node Name="Project information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="SysLibGetAddress" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="This function returns the start address of a segment of the first application. &#xD;&#xA;If every segment is in its own area, this function works in V3 " ObjectGUID="{a43ff29c-b404-4a30-b272-d5033ade5cbf}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{86c97fd8-5ba5-4f96-8012-48db33867109}" />
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="Data types" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{1a6e9b64-8dc9-49ab-b80b-b0c659ea3121}" />
+  <Node Name="ADDRESS_SEGMENTS" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{483f0f7b-c12f-40f3-99b6-22fbf28fa6d0}" />
+  <Node Name="POUs" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{66a76b13-ca05-4d55-94d4-1d645ba426fd}" />
+  <Node Name="SysLibGetSize" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="This function returns the start address of a segment of the first application. &#xD;&#xA;If every segment is in its own area, this function works in V3 " ObjectGUID="{40b83042-bbe0-4285-806c-bd5ccc045c23}" />
+  <Node Name="Globale_Variablen" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{5140a053-53f3-4f15-b37f-e01bdd7dac88}" />
+</Library>

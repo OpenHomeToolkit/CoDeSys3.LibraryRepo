@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="CmpChannelClientIec, 3.3.1.40 (System)">
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="HandleReply" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{35b55e30-cf43-43e2-bdd5-a434bdbb1b9a}" />
+  <Node Name="ReturnValues" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{4a779efd-71c2-485b-8370-c92ddfd43898}" />
+  <Node Name="NetClientChannelError" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsExcludedFromBuild="true" ObjectGUID="{799b9c89-98cf-457f-94d9-af6010c5dfd9}" />
+  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="Callback Prototypes" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{3cb7e201-eb77-48d1-91b9-be528ed9ef39}" />
+  <Node Name="CHCAddressComponent" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{9a997c62-2f93-4a64-86d9-29a31bb01ddb}" />
+  <Node Name="CHCPeerAddress" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{8c6c24e6-59dd-4d6b-a7fc-d8cb947fd127}" />
+  <Node Name="Test" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{0c164d7a-b0b0-44a8-aa92-55057fd78ca3}" />
+  <Node Name="Constants" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6c83257f-f326-4808-a8ac-190e075b4ce2}" />
+  <Node Name="NetClientReplyReceivedProc" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsExcludedFromBuild="true" ObjectGUID="{83dabd72-7a2e-4b8f-8b2e-690842a143a6}" />
+  <Node Name="HandleChannelError" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{2b374624-8a7c-41bc-a535-d7c0485952a0}" />
+  <Node Name="SetError" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{21442a8f-e23a-43a1-bae5-e263b525926d}" />
+  <Node Name="CHCProtocolDataUnit" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0175e4de-5520-4882-9d0c-fd6aea2a7f80}" />
+  <Node Name="Test_PRG" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{70121b86-a68e-496a-9850-345ca8a61750}">
+    <Node Name="SetupAddress" TypeGUID="{8ac092e5-3128-4e26-9e7e-11016c6684f2}" EmbeddedTypeGUIDs="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{8b3210c1-d3c4-40ce-9565-07ecdfb67b88}" />
+  </Node>
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{d85c4e6b-2295-493f-9cd0-a08180b4a94c}" />
+  <Node Name="NetClientOpenChannel" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{2a31eed8-a3b5-460b-9709-290acd73a60b}" />
+  <Node Name="NetClientSend" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{6aed7d4d-0577-4056-b481-6c1b2dcefd76}" />
+  <Node Name="CHCAddressType" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{28eaa356-7ff4-4f4b-8641-75259935b4a0}" />
+  <Node Name="NetClientCloseChannel" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{62f85c9d-4875-4c09-aeb9-6bb2f4177e26}" />
+  <Node Name="NetClientOpenChannelResult" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{00f5002f-f062-488f-9479-cc08c5243e1d}" />
+  <Node Name="Test_State" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{98b9af20-a700-4348-a6e6-58a5255ca54a}" />
+  <Node Name="Structures" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{239d4922-786d-454e-971b-ba6d63fbbbd9}" />
+</Library>

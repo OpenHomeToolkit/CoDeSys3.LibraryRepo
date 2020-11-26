@@ -1,0 +1,5 @@
+#CmpApp
+#SysCpuHandling
+#CmpEventMgr
+CmpErrors Interfaces, * (System)
+SysTypes Interfaces, * (System)

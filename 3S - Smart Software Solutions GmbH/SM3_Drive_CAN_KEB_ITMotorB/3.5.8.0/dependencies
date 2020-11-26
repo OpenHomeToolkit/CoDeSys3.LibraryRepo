@@ -1,0 +1,7 @@
+#SM3_Basic
+#Standard
+#SM3_Drive_CiA_DSP402
+#IoStandard
+#SM3_Drive_CAN
+#SM3_Drive_CAN_DS402_CyclicSync
+SysTypes2 Interfaces, * (System)

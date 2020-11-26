@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="ARP, 3.5.11.0 (3S - Smart Software Solutions GmbH)">
+  <Node Name="ARP_Packet" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{ecde20f0-4a80-42dd-8f11-d49711c8f257}" />
+  <Node Name="IEthernet" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{38cd0c6d-1cad-43d7-85fa-0002418a12a2}">
+    <Node Name="SendARP" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Sends an ARP Request " ObjectGUID="{ed546659-c8a8-43ca-b46d-752be25b0c30}" />
+  </Node>
+  <Node Name="IARPEthernetClient" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6d1519c6-09e5-4f95-abae-4a7a2695cae0}">
+    <Node Name="ReceiveARP" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Returns TRUE, if the ethernet frame was the arp response to the request sent before. " ObjectGUID="{0a97db7d-72db-42da-ba6a-0becf45c21e8}" />
+  </Node>
+  <Node Name="IARPCallback" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{03a6fa45-1603-4324-8d1f-d7baf828cc1f}">
+    <Node Name="ARP_RequestCallback" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This Method gets called by the Request FB as soon as the response was received. " ObjectGUID="{c9dac36a-7406-4a11-84d9-621239ff81f0}" />
+  </Node>
+  <Node Name="MAC_ADDRESS_COMPARE" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{4e39440e-17ef-4469-a0b3-841dfb1f96da}" />
+  <Node Name="Request" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{8ef135a6-b03f-47bd-bf6e-52e3528cfad0}">
+    <Node Name="Send" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Creates and sends an arp request " ObjectGUID="{f485e03e-3a98-4151-93a1-37eae216cc56}" />
+    <Node Name="ReceiveARP" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Returns TRUE, if the ethernet frame was the arp response to the request sent before. " ObjectGUID="{50cf7647-9bb2-4d51-859b-abc6504462bb}" />
+  </Node>
+  <Node Name="CONSTANTS" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0af7bf86-c8d8-4beb-876f-c4668a3ebb01}" />
+  <Node Name="Structs" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{00e02297-2993-44b8-b3cc-c85f5ab63afe}" />
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="Interfaces" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{a01baa3e-a3a9-4a83-8da0-292162a142af}" />
+  <Node Name="Functions" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{14721417-daef-4cb7-b267-31a8f5751c22}" />
+  <Node Name="Function Blocks" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6d3aaed2-997c-4faa-a755-c45879cf969d}" />
+  <Node Name="Constants" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{c4b1c82e-9df1-44ca-8322-5a4f05a7319a}" />
+  <Node Name="Bibliotheksverwalter" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{ecae0e39-4d29-482d-aa80-f82aed73383b}" />
+</Library>

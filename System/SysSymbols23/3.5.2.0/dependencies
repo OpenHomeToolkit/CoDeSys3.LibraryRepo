@@ -1,0 +1,6 @@
+#SymbolicVarsBase
+#Collections
+#IecVarAccess
+Base Interfaces, * (System)
+IecVarAccess Interfaces, * (System)
+CmpErrors Interfaces, * (System)

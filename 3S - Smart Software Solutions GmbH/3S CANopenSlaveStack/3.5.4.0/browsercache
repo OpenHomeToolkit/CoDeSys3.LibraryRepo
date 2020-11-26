@@ -1,0 +1,742 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="3S CANopenSlaveStack, 3.5.4.0 (3S - Smart Software Solutions GmbH)">
+  <Node Name="CANOPENSTATE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="CANopen states as defined by CiA-301" IsHidden="true" ObjectGUID="{e727c19b-f148-41b3-8e3f-c2f0a9a9d997}" />
+  <Node Name="Compatibility" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{c31fd490-c60f-4db2-8902-938c9cb1b9a5}" />
+  <Node Name="SRDO" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{9a46d77d-40e2-4490-a5b8-6d9b8923c3b5}" />
+  <Node Name="NODEID" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c5d33b3c-481b-49ab-8f8d-d985c658d7b5}" />
+  <Node Name="Range Types" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{47191ad8-2ba0-4e0e-9e9f-c9bf22154320}" />
+  <Node Name="EncodeSyncCOBID" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Helps to encode the content of the SYNC COBID Object (Object 16#1005)." ObjectGUID="{69082bde-b585-4014-873f-41a311397cf7}" />
+  <Node Name="EncodePDOMappingEntry" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Helps to encode the content of a PDO Mapping Object (Object 16#1600-16#17FF or 16#1A00-16#1BFF)." ObjectGUID="{7745ecdb-bda3-4683-8bab-78871b76be9d}" />
+  <Node Name="EncodePDOCOBID" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Helps to encode the content of a PDO COBID Object (Object 16#1400-16#15FFsub1 or 16#1800-16#19FFsub1)." ObjectGUID="{18700d70-1a69-4a89-a41b-bd4d24695ddd}" />
+  <Node Name="SYNC" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{0cfa1eba-e9ab-4623-bc8d-d8e7278f5df5}" />
+  <Node Name="Heartbeat" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{cb092ac0-47d8-41a6-8062-69bf9dbe4c98}" />
+  <Node Name="PDO" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{df75578e-a08f-44d9-a566-71a1008845a1}" />
+  <Node Name="EMCY" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{91a09ff2-05e3-44bc-901c-dae1c8a12bd2}" />
+  <Node Name="EncodeHeartbeatConsumerSettings" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Helps to encode the content of a Heartbeat Consumer Object (Object 16#1016sub1-254).&#xD;&#xA;If uiHeartbeatTime &gt; 0 AND byNodeID &lt;&gt; 0 ==&gt; Heartbeat consuming enabled" ObjectGUID="{766da7dc-9784-42d6-be50-914572ce4d66}" />
+  <Node Name="DecodeEmcyCOBID" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Helps to decode the content of the EMCY COBID (Object 16#1014) " ObjectGUID="{a734dd39-bf05-478e-9cd3-afa35f9e1fa4}" />
+  <Node Name="ConfigurationParams" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{69512af7-b98d-46e0-aa16-191e4e48c437}" />
+  <Node Name="Functions" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{eb7190a8-ceb9-454b-93be-e905820a9e29}" />
+  <Node Name="Functions" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{07daa89f-5480-416b-850a-0636a643ec3d}" />
+  <Node Name="Functions" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{37dbed69-ec32-43ed-9d58-3afaa792cfda}" />
+  <Node Name="Functions" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{8429fad1-851c-4bd8-9451-52dc1715ee1d}" />
+  <Node Name="Functions" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{d096abb0-7779-4fcb-8aad-4cdea728d540}" />
+  <Node Name="EncodeEmcyCOBID" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Helps to encode the content of the EMCY COBID (Object 16#1014) " ObjectGUID="{e906495b-d8e1-4535-8cc6-af9bda166d6a}" />
+  <Node Name="DecodePDOMappingEntry" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Helps to decode the content of a PDO Mapping Object (Object 16#1600-16#17FF or 16#1A00-16#1BFF)." ObjectGUID="{69bfc6d0-107d-4624-8c3a-1c1be46169e4}" />
+  <Node Name="Heartbeat" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{5eb125d7-6a20-4b92-bfda-511cf4231beb}" />
+  <Node Name="Iterator" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{9df17a41-ca49-4127-bedd-35e34f97822e}" />
+  <Node Name="IPDOObject" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{0fe698d5-00f4-4b64-8d1b-98f4e3ae6c9c}" />
+  <Node Name="ErrorField" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{79c82ae2-67dd-42d5-9caf-80b038dec14a}" />
+  <Node Name="DecodeSyncCOBID" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Helps to decode the content of the SYNC COBID Object (Object 16#1005)." ObjectGUID="{febd4219-4f1d-4abf-b1fd-330a034eb097}" />
+  <Node Name="PDO Service" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{20cee426-8a31-4126-85f4-9245a5b23f08}" />
+  <Node Name="Iterator" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{db40fd48-ff37-48b8-b11b-edbd7ce81283}" />
+  <Node Name="COBID" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{71f000bf-35ac-4ed4-bf92-b3b80003fa93}" />
+  <Node Name="PDOObject" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{82269d12-bf1e-412e-a56d-b0072e52804f}">
+    <Node Name="Enabled" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{685fcdd6-7784-4d07-856d-b356f2f62ad9}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{608f078b-219f-4331-9863-3f89d9152fc6}" />
+    </Node>
+    <Node Name="RTR" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{15d54f57-06b4-418e-8b19-01f1ee5fd69b}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{f0c7ee87-f58c-492e-b683-2f485cf69d22}" />
+    </Node>
+    <Node Name="Reset" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{1b26c84f-bfb6-4693-bc80-6468ed72b95b}" />
+    <Node Name="OnPDOSettingsWrite" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{9bf2f5b9-5160-42e6-9314-fe8bebaa3e64}" />
+    <Node Name="pDevice" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{91543658-0734-4c6f-bf6d-6f381ee6aa43}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{4a54367d-9507-47a4-a6bf-30b086ec9585}" />
+    </Node>
+    <Node Name="COBID" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{ad6fbe40-092b-47eb-82ca-7bc3f2307a52}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{9ddbdce1-33e7-4478-ba74-42208e1dff16}" />
+    </Node>
+    <Node Name="PDOCount" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b1a7ef4e-ed39-4931-bb04-b6439016bb38}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{177167ad-d49d-483e-8405-03d9b33aa636}" />
+    </Node>
+    <Node Name="TransmissionType" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{be18c939-83ff-4d4b-92ab-7bad23ab05fa}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{4b8c2e50-ec63-44be-b842-34a138fafb99}" />
+    </Node>
+    <Node Name="MoveNext" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{2632f3c0-1799-4515-bffd-31fa6940ff6c}" />
+    <Node Name="ExtendedID" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7f9355b9-842a-484b-bcfc-783eb1fcd9cc}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{13faaefd-6fa0-4e21-99ba-7ca279e15e5e}" />
+    </Node>
+    <Node Name="EventTimer" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6b41b1cb-8e5d-465f-935a-3198713375ff}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{63c69efb-e014-46c2-ac90-c84f419f1ea7}" />
+    </Node>
+    <Node Name="OnSyncEvent" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{3cb2d0fd-8096-446f-acb4-700702c1826a}" />
+    <Node Name="InhibitTime" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{ec3c45cb-4b94-4a2e-a77e-f3d29d9077d1}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{c1918e92-1e64-4746-836c-916f599d5f3b}" />
+    </Node>
+  </Node>
+  <Node Name="Sync Service" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{4719dc46-28d4-4020-aa01-e6b4e6cd8040}" />
+  <Node Name="ISyncObject" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{b5684741-4496-495a-8048-988c3370e84a}">
+    <Node Name="SyncProducing" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2ce3faea-3ee5-442f-b3c9-b53d349e5a9b}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{5adbcb31-29ea-483d-9e08-aab2f6e89eba}" />
+    </Node>
+    <Node Name="ExtendedID" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d9e4f70a-ee7c-447e-937a-114addc93535}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{433939b7-baa1-4740-a9fc-66f5584b6214}" />
+    </Node>
+    <Node Name="COBID" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{56866651-8031-4df6-8b3b-f11da2fbfcdd}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{6a23ce36-2c2c-41e5-9cb4-245b67e8bc57}" />
+    </Node>
+    <Node Name="ComCyclePeriod" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{964d1eba-13d5-4c71-baf4-eeaaa3248267}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{bd4d348d-d60c-4f1f-9622-aa0e7799274c}" />
+    </Node>
+    <Node Name="UnregisterRPDO" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{9c2f2667-a6bb-41d6-b773-7fa1a5498327}" />
+    <Node Name="RegisterRPDO" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{77546b99-b87c-4551-8453-0a50971ebf4a}" />
+  </Node>
+  <Node Name="DecodeHeartbeatConsumerSettings" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Helps to decode the content of a Heartbeat Consumer Object (Object 16#1016sub1-254).&#xD;&#xA;If uiHeartbeatTime &gt; 0 AND byNodeID &lt;&gt; 0 ==&gt; Heartbeat consuming enabled" ObjectGUID="{01e288d6-0666-4963-9345-ade6fe3dbf5f}" />
+  <Node Name="Iterators" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{7e65aa55-9cce-4a60-83d1-8629ff3d93c8}" />
+  <Node Name="API" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{f97d067a-7565-410b-ba19-2097ce58fe98}" />
+  <Node Name="ObjectDictionary" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{868fd4b9-0c1d-4c9b-b4e8-cef7e0ff25cf}" />
+  <Node Name="ObjectDictionary" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{d7617a93-42f3-4b64-a57e-e4bc98002df7}" />
+  <Node Name="ObjectDictionary" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{0e931508-b0c9-48b2-92cc-d313f244f20d}" />
+  <Node Name="IPDOObject" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{4007ef3c-a562-48cf-ab39-c679eca9a7ed}" />
+  <Node Name="PDO Service" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{79d234a2-67cb-49e5-89f9-c42139c5f221}" />
+  <Node Name="IPDOObject" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{4047944e-867d-45a9-bbed-1d0ac9806516}" />
+  <Node Name="SDOServerHandler" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{397b13f8-834b-4dc2-a052-1aac935a04c0}">
+    <Node Name="itfOD" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a10a9e49-454b-4e40-a9c6-846db9ef3b20}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{9d44b504-bd1d-4f56-87e8-696c48ec50e7}" />
+    </Node>
+    <Node Name="EndDownload" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{4ec96e2d-b8b5-4194-a832-0334710a7dd2}" />
+    <Node Name="EndUpload" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{c12a8572-67d1-4c89-b32b-1102b8e9055b}" />
+    <Node Name="HandleDownloadRequest" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{4f12b88c-7b40-4b68-a466-686f345b3b5d}" />
+    <Node Name="HandleUploadRequest" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{dd3342a4-7625-46cd-9ae1-39db7476b750}" />
+  </Node>
+  <Node Name="EMCY COBID" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{b2b0ab8e-bcd1-4387-b0eb-fd5929a9025a}" />
+  <Node Name="EMCY Service" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{20d3a5a6-7152-4022-9a96-cdaf9e55fe12}" />
+  <Node Name="ErrorRegister" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6e7ba2c7-9050-4d57-abe4-72b4d8ffdb04}" />
+  <Node Name="EMCYObject" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{b79902a6-23de-47a9-8465-1da992850e83}">
+    <Node Name="PendingErrors" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2a4d8632-0bac-4262-a187-c71dcb230b91}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{d82c15ec-07c5-4bb2-8464-1f922dd18058}" />
+    </Node>
+    <Node Name="ReadErrorRegister" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{53db3358-4317-4886-b193-90454c1914a8}" />
+    <Node Name="pDevice" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3b524f0a-3e83-494f-9b6a-8744859e08be}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{1a421b48-e64b-4f91-a8f5-e1432eeab7fa}" />
+    </Node>
+    <Node Name="OnEmcyCOBIDWrite" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{d8e65f78-b51d-4303-b6ef-161822047594}" />
+    <Node Name="SendEMCY" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{b701e4a8-0c41-4b2a-81e8-a890c748eb51}" />
+    <Node Name="ClearAllErrors" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{f719ac21-3eb2-42c7-8b6a-6833033d2b68}" />
+    <Node Name="ResetEMCY" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{7c0218b8-cde1-46c4-a757-1140fc32968e}" />
+    <Node Name="Active" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{929da577-aabf-438a-9056-198686abe859}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{169d2752-c140-49d6-ae16-9ab73599adb9}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{c6ae062e-2430-40a0-b216-ccbaaf05c837}" />
+    </Node>
+    <Node Name="EMCYCOBID" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a76c7dfa-d940-424a-a489-e798eb3e0978}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{7d1f3462-c473-4e39-9a7b-580a6c93032c}" />
+    </Node>
+    <Node Name="EMCYEnabled" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e6e2538a-827d-4cb8-8f05-b0dc51e0c8d5}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{8486bb01-9484-43e6-b815-6c50960d5ffa}" />
+    </Node>
+    <Node Name="AddToErrorField" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{ff81f3f1-b726-4e0c-9159-2f42d09fc97c}" />
+    <Node Name="SetEMCY" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{8206946c-b102-410f-962a-b1a8bc4475ae}" />
+    <Node Name="ErrorFieldCount" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7a030298-d074-4f54-ba5d-b685ae1b640a}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{c2baa8d3-252b-47b2-8166-8de4dfd61ad4}" />
+    </Node>
+    <Node Name="UpdateErrorRegister" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{49436ee4-3709-4f39-a2d8-e07721f8cb35}" />
+  </Node>
+  <Node Name="ObjectDictionary" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{5723af20-bff4-4346-96c4-60e4c982a545}" />
+  <Node Name="RPDOObject" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{bd4bcbe2-6bc0-45de-bb66-c40880df8346}">
+    <Node Name="PDOSettingsChanged" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{0b8a9f0b-e2aa-4e67-9825-5ac4f4cd30e7}" />
+    <Node Name="OnSyncEvent" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{51756522-e23c-4da2-9f95-72a09d55fbda}" />
+    <Node Name="Current" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{af321438-5042-4c3b-a52d-b20ca102fe40}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{eaba1363-a2c4-4024-b2a0-3bddf3df5016}" />
+    </Node>
+    <Node Name="CopyFromPDO" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{0d961bbc-75ee-4313-b248-f05cea2f4513}" />
+    <Node Name="FB_Init" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{faa2fd85-8367-4760-aca4-d6c0069c9a7c}" />
+    <Node Name="SyncRPDOQueue" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2af905b8-3923-4f5d-8ee6-0b2f11c93b9d}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{c2582083-0606-4e23-b572-5533be78146a}" />
+    </Node>
+    <Node Name="OnPDOEnabledChanged" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{80714478-5163-4b13-926c-7ab97ca693c9}" />
+    <Node Name="Active" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{5e073bff-4c87-4715-90df-8f07983f1321}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{0b57f058-d3c7-46a0-8ff5-1c8ff6970d71}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{2d6d57e9-98ba-43f6-adf6-bd8f638460d1}" />
+    </Node>
+    <Node Name="ReceivePDOs" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{a8c3fdc7-59b2-4929-946a-3d6d2c066c0e}" />
+  </Node>
+  <Node Name="COBID" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{5f505ad5-75b1-41ff-aae8-aeb1b3772eba}" />
+  <Node Name="DecodePDOCOBID" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Helps to decode the content of a PDO COBID Object (Object 16#1400-16#15FFsub1 or 16#1800-16#19FFsub1)." ObjectGUID="{fbef503a-8f8e-4231-bf36-437cabfaedb8}" />
+  <Node Name="Iterator" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{876b7dd8-05ab-4b1e-b2f9-2de9e3d4ba61}" />
+  <Node Name="COBID" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{57da82e5-17cc-470f-a58d-f9042ff2f8d8}" />
+  <Node Name="IObjectIterator" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{f83cfd72-3ad3-421d-bd12-0b9c825243bc}">
+    <Node Name="ObjectDictionary" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{299ee01f-1866-4a12-9803-9ee48b9e75a1}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{006f07a4-e40d-4e1d-a6e5-300b1cc30de5}" />
+      <Node Name="Set" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{677f91eb-440b-45ad-b261-324a3712b176}" />
+    </Node>
+    <Node Name="Current" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{59d92393-c254-4db9-a7cf-8562612f0aab}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{2e9de7ad-4dcd-4586-b1bd-97b5947633b8}" />
+    </Node>
+    <Node Name="Reset" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2f5b63db-2fd0-4d93-9cc7-900c7db18881}" />
+    <Node Name="MoveNext" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{21da7db4-3186-4ce0-880c-13ef50344231}" />
+  </Node>
+  <Node Name="ObjectDictionary" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{88d84817-676d-44b0-9634-11bc3dcca65d}" />
+  <Node Name="GUARDING_TYPE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{52b04128-f241-4ba6-aad6-4938f2eeebe2}" />
+  <Node Name="Search" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{f868583f-7814-4d63-92e5-e9dea017a845}" />
+  <Node Name="Read" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{d815e04a-09f0-4ef8-822c-b0cc0e8174a7}" />
+  <Node Name="IODCallback" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="This interface must be implemented if someone wants to register an ObjectDictionary callback &#xD;&#xA;for read and write operations via the RegisterCallback method of IObjectDictionary.&#xD;&#xA;All write and read operations on objects can be monitored and aborted by returning an appropriate aborte code." ObjectGUID="{074456c4-cf63-45d0-adb4-53366246c863}">
+    <Node Name="OnObjectChanged" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Will be called after a write operation was performed on an object.&#xD;&#xA;If all IODCallback instances registered to the Object Dictionary return ABORT_CODE.SUCCESSFUL write operation will be executed.&#xD;&#xA;Vice versa: If any instance returns an error write operation will be aborted and the reader will be informed. " ObjectGUID="{ca8a4371-2e80-4fef-a291-568da084e6ce}" />
+    <Node Name="OnWriteObject" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Will be called before a write operation is performed on an object.&#xD;&#xA;If all IODCallback instances registered to the Object Dictionary return ABORT_CODE.SUCCESSFUL write operation will be executed and an ObjectChanged event will be raised.&#xD;&#xA;Vice versa: If any instance returns an error write operation will be aborted and the writer will be informed. " ObjectGUID="{26e3518a-ec34-43e6-af92-1c7683d90853}" />
+    <Node Name="OnReadObject" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Will be called before a read operation is performed on an object.&#xD;&#xA;If all IODCallback instances registered to the Object Dictionary return ABORT_CODE.SUCCESSFUL read operation will be executed.&#xD;&#xA;Vice versa: If any instance returns an error read operation will be aborted and the reader will be informed. " ObjectGUID="{83c2a8be-406c-46d1-ab8c-ac86c3c37a9a}" />
+  </Node>
+  <Node Name="InterfaceUnion" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{d9309b34-201c-41ac-9d66-7cef8ac39395}" />
+  <Node Name="ISubObjectIterator" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{650e6cde-6f26-47f0-b92e-038399fc0ea7}">
+    <Node Name="MoveNext" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{470d7c82-0e0f-43d5-9563-b097201388b4}" />
+    <Node Name="Object" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{fc68969e-2992-4431-bcc4-807e6170ae9f}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{0bb88cc9-22b8-4f7f-ba46-f901f85b09cc}" />
+      <Node Name="Set" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{259aa215-8d92-4510-bc8f-e0f5a7870a52}" />
+    </Node>
+    <Node Name="Current" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{694281a6-bfdc-4a19-9e8e-c77d46a92877}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{f423ffdd-5bda-4364-ae9a-98fd8f7dbf12}" />
+    </Node>
+    <Node Name="Reset" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{95cccbd8-6f7a-4d70-99d9-ffe68289146f}" />
+  </Node>
+  <Node Name="Internal" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{b3216a2d-345e-4081-bd35-e64e361965e8}" />
+  <Node Name="SubObjectIterator" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Helps to iterate through the subobjects of an object.&#xD;&#xA;For using this iterator property Object must be set to the corresponding object. The iterator then points in front of the first subobject of this object (==&gt; property Current is 0).&#xD;&#xA;By calling MoveNext the iterator can be moved to the next subobject. If MoveNext returns TRUE the current subobject can be retrieved by property Current.&#xD;&#xA;The iterator can be set back in front of the first element by calling Reset." ObjectGUID="{88836815-0b19-4da4-927a-8d7e417c2a0f}">
+    <Node Name="CurrentIndex" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6ac2b8cf-cbc3-476e-85dd-e2b31d2089d1}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{c7905e0a-cdf2-4b75-bbee-2fdbe2e452f8}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{ae54f40b-11a3-40ed-82e1-935d92038b0d}" />
+    </Node>
+    <Node Name="Reset" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Resets the iterator. Afterwards iterator points in front of the first element (==&gt;Current is 0)." ObjectGUID="{34bdc449-89cc-4915-9763-86d050355b45}" />
+    <Node Name="MoveNext" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Sets the iterator to the next subobject. This subobject can be retrieved afterwards by property Current.&#xD;&#xA;Method returns TRUE if iterator was successfully moved.&#xD;&#xA;Method returns FALSE e.g. if end of list." ObjectGUID="{0381cac4-8897-4daa-9ea1-293c371e4f17}" />
+    <Node Name="Object" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b838bfa7-d3eb-4480-9ff0-ad72a7b2830c}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{68d48b7b-f696-4a96-add5-5b0c2238f67d}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Object where the iterator is connected to.&#xD;&#xA;Iterator will be automatically resetted if object will be set." IsHidden="true" ObjectGUID="{e443cca9-9e34-4ca1-b523-fa512858137a}" />
+    </Node>
+    <Node Name="Current" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{ac42757e-c7d2-4df0-89fc-add4e7023944}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Gets the subobject where the iterator points to." IsHidden="true" ObjectGUID="{148089c2-7f21-4512-9a8c-e035ff0c059d}" />
+    </Node>
+  </Node>
+  <Node Name="IODObject" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Defines an object dictionary entry. Each entry has subobjects which hold the object values." ObjectGUID="{2ac34b02-ce2d-45b4-befb-97e1f1595adf}">
+    <Node Name="GetSubObject" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Get subobject" ObjectGUID="{033a7420-0b46-4469-a9ea-974def7ceb04}" />
+    <Node Name="Index" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{14c0dbc2-2130-4b59-8f22-680413f1310a}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{c81b2a58-530c-4c30-9356-61fc649e3198}" />
+    </Node>
+    <Node Name="SubCount" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{63389828-843f-42ac-b0ed-8a3f6844297c}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{69507994-1b62-4c9c-bb55-408ea9423a83}" />
+    </Node>
+  </Node>
+  <Node Name="IRPDOObject" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{0f6ae59d-836b-459c-b5ff-f900c7906de5}">
+    <Node Name="SyncRPDOQueue" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d3f5fae0-1cc3-4e54-a428-66e5430f02fb}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{0eddcecb-3027-43c4-8b58-0cf804cbc536}" />
+    </Node>
+  </Node>
+  <Node Name="Write" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{90fa846f-9121-4d0e-b518-377797ff5cfa}" />
+  <Node Name="IPDOObject" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{6c32ebb4-a42a-4613-8878-4ac3e6b0d072}">
+    <Node Name="OnSyncEvent" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{953835dd-6fe2-4931-93a6-a3ab20715e87}" />
+  </Node>
+  <Node Name="ObjectIterator" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Helps to iterate through the objects of an ObjectDictionary.&#xD;&#xA;For using this iterator property ObjectDictionary must be set to the ObjectDictionary interface. This interface can be retrieved from the CANopenDevice instance.&#xD;&#xA;After setting the Object Dictionary interface the iterator points in front of the first element of the Object Dictionary (==&gt; property Current is 0).&#xD;&#xA;The iterator can be moved to the next element by calling the MoveNext method. If MoveNext returns TRUE the object can be retrieved by calling Property Current.&#xD;&#xA;The iterator can be set back in front of the first element by calling Reset." ObjectGUID="{0336595c-fcb9-4815-af42-c6915fab3349}">
+    <Node Name="ObjectDictionary" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{182d3b8b-0d0a-4b3e-ba0b-311a818f7f23}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="ObjectDictionary where the iterator is connected to.&#xD;&#xA;Iterator will be automatically resetted if ObjectDictionary will be set." IsHidden="true" ObjectGUID="{f76847a9-47dd-41a9-a9b8-95ee0893fb4b}" />
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{99fb63da-6ce7-4009-b0c4-454141938f2a}" />
+    </Node>
+    <Node Name="MoveNext" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Sets the iterator to the next object. This object can be retrieved afterwards by property Current.&#xD;&#xA;Method returns TRUE if iterator was successfully moved.&#xD;&#xA;Method returns FALSE e.g. if end of list." ObjectGUID="{3d6e9e35-37f6-45be-8e73-0fc03f6a6cb6}" />
+    <Node Name="Current" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7451c3a6-8380-4439-b287-50003e63455b}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Gets the object where the iterator points to." IsHidden="true" ObjectGUID="{083e9a7a-7542-44dd-8a38-579808e4c167}" />
+    </Node>
+    <Node Name="Reset" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Resets the iterator. Afterwards iterator points in front of the first element (==&gt;Current is 0)." ObjectGUID="{976769bf-6689-4b18-899f-67ce18f559c4}" />
+    <Node Name="CurrentIndex" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{41834778-6dfe-4b3a-8a35-a77d396a8802}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{abdcb144-c3ec-4078-a269-37eab3144eb3}" />
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{5d51027c-0064-4876-a3b7-ea339cbcc02d}" />
+    </Node>
+  </Node>
+  <Node Name="Events" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{e1581355-5b6c-4b58-acb8-76a13cdff1f5}" />
+  <Node Name="IODCallback" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{2481255c-6199-45e3-b920-6736411e1d36}" />
+  <Node Name="NMT" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{64e7b7c1-863a-456d-ae29-0cf3e3b2f29e}" />
+  <Node Name="Transitions" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{e65559a8-665b-427f-a0ad-b69e7b0d485e}" />
+  <Node Name="STATE_INTERFACE_INFO" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{0b78fac5-d5de-444a-a656-408e816a2d75}" />
+  <Node Name="Transitions" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{732b4273-3a70-46e6-a089-cf60c023da6f}" />
+  <Node Name="Transitions" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{2fa7d58c-f5ff-43dc-a78b-777cff9b5a9e}" />
+  <Node Name="Transitions" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{e797b2ec-f8c2-43fe-b50f-d118f0243303}" />
+  <Node Name="SDO" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{61705a4e-b5cb-4369-b254-f55fcf481ac5}" />
+  <Node Name="Transitions" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{970c85a0-1e3d-406f-bb3b-ac016441228f}" />
+  <Node Name="INIT_SUBSTATE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{60bd942e-fd5c-47cd-9a59-94c822691786}" />
+  <Node Name="NMTStateInit" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{970cd38a-df88-4c66-9e0b-0961dda88059}">
+    <Node Name="SubState" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a322a056-9f46-42bb-888c-fb8fb1b2b0cf}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{b3389a83-7293-44ed-902f-746250c3ea2d}" />
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{b5fdbbbf-960b-4822-86f9-e771d39133c0}" />
+    </Node>
+    <Node Name="DoStateTaskEnd" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{421cd8ee-fc50-47d6-b7b2-e6e5cde0e999}" />
+    <Node Name="SetToPowerDown" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{740fa48a-8f99-44b0-86ba-8b256944b75e}" />
+    <Node Name="State" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f5d1f881-270f-4f61-9293-810313f59856}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{43606169-3b8f-4a0f-9e48-45b3690447b9}" />
+    </Node>
+  </Node>
+  <Node Name="NMTStateStopped" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{6379c4d0-f662-4cda-85c6-20d52dbd4f68}">
+    <Node Name="Guarding" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{405e6e29-4afc-4145-9570-efbd100f2a2e}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{baa02420-2558-4e77-bf71-5f5149016e18}" />
+    </Node>
+    <Node Name="NMT" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3ceca367-a4d3-4c37-aa95-2c962ea19649}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{de78131d-54d4-4e8a-a5bb-c689096b31fa}" />
+    </Node>
+    <Node Name="SetToPreop" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{5de1bb87-4d0b-47ba-a4e3-fda082782bed}" />
+    <Node Name="SetToPowerDown" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{a0377d3f-3261-4fbe-ba68-992722d5d890}" />
+    <Node Name="SetToOperational" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{9e47869c-ba6b-45fa-a924-246572ed2397}" />
+    <Node Name="SetToInit" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{58a0069a-517f-4a87-9820-448ec04621df}" />
+    <Node Name="State" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{4f8dc3fe-8d1f-4754-bc9f-680e73be0bb7}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{8d28ce16-a794-404c-a586-f595c13a177d}" />
+    </Node>
+  </Node>
+  <Node Name="NMTStatePreop" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{04e9ca47-53a6-476b-b32f-62ec8b2f75c3}">
+    <Node Name="NMT" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a38bab61-b693-41d8-bdc2-edac611c25e3}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{34ce6e8f-2236-4fc2-a96c-c261a3b4a585}" />
+    </Node>
+    <Node Name="SDO" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{51f181a0-aafc-43c4-b000-14cc6761c6fb}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{a267ab6b-1188-45a6-ac0f-0058bed7281c}" />
+    </Node>
+    <Node Name="Guarding" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{cf2c2354-b17b-4e03-83dd-d9462f8142cf}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{ff6eb129-2834-41a1-85cb-c184b5b68da4}" />
+    </Node>
+    <Node Name="EMCY" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{385b25ef-ab73-4d65-b330-385b075c0635}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{b4c5aab5-f771-41df-bc5f-a7cb1ca46206}" />
+    </Node>
+    <Node Name="Sync" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3c9568d3-2d63-4fa4-a0c4-3adb999db781}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{d4afb896-70d9-4106-8c6e-d024f1528d0f}" />
+    </Node>
+    <Node Name="SetToPowerDown" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{5e5f9e1f-6163-4ded-affb-88b47788bfeb}" />
+    <Node Name="SetToOperational" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{ece4908d-a484-4509-9566-49ed2c8d6e8e}" />
+    <Node Name="SetToInit" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{4c68d2b3-3e52-4dff-b782-83aebb9422ec}" />
+    <Node Name="SetToStopped" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{471b0381-6e63-4c64-a16f-dd4afb870588}" />
+    <Node Name="State" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a3920a9a-dcf6-459b-b969-fc557662770d}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{cd6b8cb2-7b0a-41c6-b1a2-848133b581cc}" />
+    </Node>
+  </Node>
+  <Node Name="NMTStateOperational" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{a0771480-d1df-4809-a028-b3e5f41962d3}">
+    <Node Name="EMCY" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{03da4686-2aa1-4508-a8b2-51ad6d5c97fb}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{44665e2f-4f4f-43e9-8a1a-8f48c09ca9d5}" />
+    </Node>
+    <Node Name="PDO" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e6cbbb9a-5a9d-4341-b131-3fac1046967b}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{b1a806c2-1d4f-4d66-9f5e-09c59a909436}" />
+    </Node>
+    <Node Name="Sync" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{304a3d70-c24d-4faf-83b0-50eec62622f0}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{0c90a485-90ed-439d-9570-9ab323a52bbe}" />
+    </Node>
+    <Node Name="NMT" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{9ca93115-40fd-4b35-9de8-24287a6111f3}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{f906fff5-767b-42c7-9e1c-ed326ca2299d}" />
+    </Node>
+    <Node Name="SDO" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{65854d4d-3ebc-4520-8be1-f848ae957f0a}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{446bffb1-6e73-445e-a16b-239b0d6b7c16}" />
+    </Node>
+    <Node Name="Guarding" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d44eff76-f42c-4df2-8938-b02769e7b1c6}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{0468072c-1b66-4761-8ce4-6a9e265540e3}" />
+    </Node>
+    <Node Name="SetToPreop" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{9f15f61e-7f83-4204-ac3f-70d1fb866e15}" />
+    <Node Name="SetToPowerDown" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{c6098ee5-2eb5-4f3c-9bef-2371a211f13f}" />
+    <Node Name="SetToInit" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{0381fbbe-f401-40be-b335-13680dbab6df}" />
+    <Node Name="SetToStopped" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{8f7326c8-db55-4485-80eb-992828be20de}" />
+    <Node Name="State" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b8b65a24-3c82-4d56-b7ab-b209d71bfbf9}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{fea71d7e-1c49-45c3-b9f1-6f1c9fc88c6a}" />
+    </Node>
+  </Node>
+  <Node Name="Transitions" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{ed252f99-63fb-4b5e-8e2d-2f4df06e35a7}" />
+  <Node Name="Nodeguarding" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{5998c10b-752e-42e0-a69b-130e0eaf6494}" />
+  <Node Name="Guarding" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{8e1f2a73-0530-44b5-ab33-a36f438a7235}" />
+  <Node Name="NMTStatePowerDown" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{804e2a5b-9331-41ac-a055-9dc92d1af770}">
+    <Node Name="SetToPowerUp" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{ba6cb985-b39c-40c1-aa5d-948c173247b9}" />
+    <Node Name="EnterState" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{2aae41e7-d455-429e-839c-7634a609a19f}" />
+    <Node Name="State" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{5243e333-7ffa-4269-80ab-ec1ce6a1ee18}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{2a10b564-7a8a-4991-94d1-49167c56e817}" />
+    </Node>
+  </Node>
+  <Node Name="NMTStateBase" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{28a7eadd-576d-4e05-9353-4d2d6339b1cb}">
+    <Node Name="NMT" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6aeb4951-391a-45d7-915a-388e7c56aea2}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{89c1439b-325f-4dfb-9f2f-9e027bdbe535}" />
+    </Node>
+    <Node Name="SDO" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{eb67b28a-90ba-41f3-8c04-4c0e275840f5}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{88d85fa9-8b2c-4395-bff7-0ffc25a0d62e}" />
+    </Node>
+    <Node Name="Guarding" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3b1ffe35-f9b2-4dbc-8aa9-3da9c7ff8004}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{c68b07e3-fd73-4c93-b575-7fb09ef86125}" />
+    </Node>
+    <Node Name="EMCY" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{682d88ce-9a45-487f-8d8b-2cf5cefb7fcd}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{88501d5d-a59b-4708-bb5f-c44066c78201}" />
+    </Node>
+    <Node Name="PDO" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{810da455-03db-496e-8452-0f489d98a84e}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{c1bc3fc6-0861-427b-83bd-e0b8621405cd}" />
+    </Node>
+    <Node Name="Sync" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c03082d9-7bbb-466b-a91a-e46325113836}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{ceb37f9a-6d55-4d59-84c0-173e681c7960}" />
+    </Node>
+    <Node Name="State" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c94a1285-1ccd-447c-bef4-320dc25e03ed}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{dd5d1e7f-82e8-49a0-a571-dbb773404828}" />
+    </Node>
+    <Node Name="DoStateTaskStart" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{da0e0af4-abce-4e66-abe0-2f7adeae9a32}" />
+    <Node Name="DoStateTaskEnd" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{ad41fd1a-c0f8-4518-acfd-c23e1911d5b3}" />
+    <Node Name="SetToPowerUp" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{a8eef92f-0f10-4bbd-bb1a-307e88833518}" />
+    <Node Name="SetToInit" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{534b565b-ec37-4520-9e8b-9b3ad2937d79}" />
+    <Node Name="SetToStopped" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{e18f98d5-4c17-4d3e-9791-9002a5a3398c}" />
+    <Node Name="EnterState" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{d8678385-8a3f-4145-80c8-03b80d817ee6}" />
+    <Node Name="SRDO" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{226a56c3-ae63-450f-8536-43d7a5e7f923}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{6a4320ed-4b57-45ed-83c8-4ced77c9c9c5}" />
+    </Node>
+    <Node Name="SetToOperational" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{9700c8c3-48d3-43c1-b762-134befff02cf}" />
+    <Node Name="SetToPreop" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{8a742c7d-2a7c-460c-8a15-7f9830971095}" />
+    <Node Name="SetToPowerDown" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{6c54b7de-7c5c-48ef-b43b-ad2ea7da39ee}" />
+  </Node>
+  <Node Name="NMTStates" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{326453fd-c1c5-479e-b4d3-9a94ea0f1570}" />
+  <Node Name="Transitions" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{17bb0bc0-9bfd-4cc9-b8ad-515c3684c33a}" />
+  <Node Name="INMTState" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{392d8dc8-df08-4fb2-bf82-08c72e6eba2d}">
+    <Node Name="EMCY" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{213d535a-a162-4362-bb04-2bc442bdfa31}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{80449205-d390-4361-afff-a694c1d2844f}" />
+    </Node>
+    <Node Name="PDO" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{5212aa53-0454-4fa2-adfc-f5a0bdbab03b}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{ecc0ded3-a869-4e7a-84f5-d248dcbab595}" />
+    </Node>
+    <Node Name="Sync" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{58133559-e4b9-45fb-bba1-09dc3864a7bb}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{856924bb-c502-4ce4-8e46-81a6da661ceb}" />
+    </Node>
+    <Node Name="NMT" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{745e66d0-1d87-4f85-ba5e-20155ebb6c9f}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{1c775d1d-3f6e-48cb-b206-a1d783f18392}" />
+    </Node>
+    <Node Name="SDO" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{933483f8-a87c-43a2-9919-1aea430894b1}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{f9b54a2b-3356-4333-a444-f324f6e6182e}" />
+    </Node>
+    <Node Name="Guarding" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e2f629ea-8c75-43b2-9276-817edbdbfafc}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{2ee1c6c6-3a5b-4906-8142-0a5d0d195619}" />
+    </Node>
+    <Node Name="EnterState" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{78ae9c44-28c9-48af-a25d-a3fdb491447d}" />
+    <Node Name="SRDO" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{43fdeca5-f5eb-48bc-98a8-e3aef61ee484}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{98ebc219-916b-48e6-a182-990cebcb89c4}" />
+    </Node>
+    <Node Name="DoStateTaskEnd" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{48fee1ee-feee-48fa-a3a8-4a6db049aa20}" />
+    <Node Name="SetToInit" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{61346a80-bc33-47c6-b670-f10477c952d6}" />
+    <Node Name="SetToPowerDown" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c3fff4b1-8f51-4d08-bcd2-116187d8d9a6}" />
+    <Node Name="SetToPowerUp" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{9be62179-1836-44ef-b055-83902b6526cd}" />
+    <Node Name="SetToStopped" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3fa61eb8-01be-4419-b49c-c483190b5aa6}" />
+    <Node Name="SetToPreop" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{222edf84-b2ef-457c-952e-780edbe2b38a}" />
+    <Node Name="SetToOperational" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{63798dda-be34-40aa-af66-0dbe6ff8d34e}" />
+    <Node Name="DoStateTaskStart" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{154de1b4-e7e7-435c-afaf-9286e2aaefca}" />
+    <Node Name="State" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{8f217a4d-1c8e-4a28-9efc-708ead73dcdb}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{c91d2f17-4f29-40f4-a4ed-6ca46114b632}" />
+    </Node>
+  </Node>
+  <Node Name="Interfaces" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{5f1b0c10-6a76-40ae-831a-840ada4cc373}" />
+  <Node Name="IODObject" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{8cc79e14-b4ca-42d0-a444-8485414705cf}" />
+  <Node Name="OD_AREA" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{948e2fe9-d2d0-4fc1-bdc8-1302af9f4238}" />
+  <Node Name="Sync Service" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{e46a33e2-062f-4aa8-be9b-9c6799472516}" />
+  <Node Name="ACCESSTYPES" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f4789df1-dc1b-4c29-9fa6-aeac85a5c3e5}" />
+  <Node Name="OD_SUBOBJECT_DATA" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{c408d6c6-9cdc-420e-8987-b3da6055e537}" />
+  <Node Name="OD_OBJECT_DATA" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{0ccd2f87-aaf2-452f-ac8b-3648465fad5e}" />
+  <Node Name="ObjectDictionary" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{7eddba28-2b7c-484d-90db-7adb2c3a612b}">
+    <Node Name="RegisterCallback" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{8a37aec6-54da-4e2a-8576-57191e0c3308}" />
+    <Node Name="Initialize" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{58d1a554-513e-4236-bd4b-70b7a406005c}" />
+    <Node Name="FirstObject" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e3830086-6e1d-4d92-8992-9f4a18fb5590}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{fc540424-8d96-4bc7-81c0-d7f5e63bf7d5}" />
+    </Node>
+    <Node Name="RaiseWriteObject" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{800d88dd-ddb7-49fb-ab64-f36e2361c5f5}" />
+    <Node Name="RaiseObjectChanged" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{a2ee6bdd-50f7-427f-b235-fe02f42a3276}" />
+    <Node Name="ReadObject" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{2535a3c5-d8da-42b2-b7bb-2cf54a9eef04}" />
+    <Node Name="ResetObjects" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{61df33c6-9e55-4cc2-9a40-c7347295f32f}" />
+    <Node Name="BinarySearch" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{c518d12a-4a21-410a-87ba-4c7ce90be6ca}" />
+    <Node Name="WriteObject" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{63a5eb08-6d79-49be-bee2-a4863f0a08eb}" />
+    <Node Name="IndexTable" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{4508b8a1-0772-4b34-b1f9-0826ac7bb945}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{f2fa58e7-54d6-49fb-a509-ee08c3796847}" />
+    </Node>
+    <Node Name="NumObjects" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1036e08b-60cb-4a7f-952f-010aaae0f6e9}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{86381f13-7032-41d6-9b7c-3786f83ccb7a}" />
+    </Node>
+    <Node Name="GetObject" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{932d0f96-c9f4-42a9-a0cd-a73cd3a18768}" />
+    <Node Name="WriteObjectByAddress" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{66dddace-9a7c-4aee-ad87-3ed14551ca87}" />
+    <Node Name="GetObjectToWrite" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{ae0880ae-fe23-4d07-89d3-d93cd0552883}" />
+    <Node Name="RaiseReadObject" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{8c02da5c-9a01-4eac-be97-25e592a10480}" />
+    <Node Name="UnregisterCallback" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{9699a1ff-3d7c-4464-945f-22f7a44f6882}" />
+    <Node Name="ReadObjectByAddress" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{738f91eb-5ebb-42ca-adf1-08fb9100c7f8}" />
+  </Node>
+  <Node Name="Callback" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{853e86be-dc48-4200-a16b-e8a4f2a6412b}" />
+  <Node Name="IObjectDictionary" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{77abc081-ab09-494a-aee0-f029a4d77a42}" />
+  <Node Name="Internal" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{a3b0777f-d0d2-458e-a85c-e8a6c129eb95}" />
+  <Node Name="OD_Object" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{15b824f5-933b-4e29-af6e-c085ce33ab90}">
+    <Node Name="ResetObject" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{f3f108f7-20c7-4ed6-a9ce-cb8b002d96b9}" />
+    <Node Name="SubCount" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{8bc5e321-c3f7-4cee-a31a-87102fad71c7}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{f908c60a-baa0-421d-89bd-c9e4fa6935a3}" />
+    </Node>
+    <Node Name="Index" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d0ff2663-9873-40d6-89b6-c95f988425c9}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{991e6d62-a6ba-422c-a6d3-c28042405da0}" />
+    </Node>
+    <Node Name="GetSubObject" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{e2b0b4e0-6231-42cd-969d-81d7112cf7fc}" />
+    <Node Name="pObject" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c5802f89-c524-419e-af8c-049a745aca4b}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{b1fdeb22-942c-4afc-8f82-a2b843a5bf73}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{ef4189cc-205f-49b6-9aae-669d5a1083b4}" />
+    </Node>
+    <Node Name="SetNodeID" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{3cde4b53-8828-4f18-948e-cb0af8ca56ce}" />
+  </Node>
+  <Node Name="Internal" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{2aea9973-2770-478e-a0b6-00f1b72702b6}" />
+  <Node Name="IODSubObject" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{5d5a61a9-a927-4a92-b74d-af0bbd9f92e6}" />
+  <Node Name="OD_SubObject" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{07e01e46-d4a5-4dc6-ba5c-f68ea00127f3}">
+    <Node Name="RefuseSDOAccess" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b3f234bc-672d-4582-9a70-b71c895eb418}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{f33f95d5-12a6-4381-af80-f819a55ebc7d}" />
+    </Node>
+    <Node Name="pObject" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a2797fa4-5c07-4cf9-96ec-ee67d2122958}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{3d7fa453-f4c4-4fd8-872f-d8324b6a97d6}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{6dee8841-4b27-4078-980c-088f04d8cdf4}" />
+    </Node>
+    <Node Name="DataType" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{789d00e4-a00f-441e-a270-93b05a48c8c3}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{1bc0d99e-44f0-42f4-bc7a-1c2f13127401}" />
+    </Node>
+    <Node Name="ResetSubObject" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{69c474bf-88f4-489c-8d7a-5dfc6da4d894}" />
+    <Node Name="SetNodeID" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{3e503321-34ff-43b5-908b-ad8f78c0bf07}" />
+    <Node Name="pDefault" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{848b81c0-b2d7-4896-9cbd-aebbc43c9656}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{9b533864-d9f2-4131-811f-5a0b706265f0}" />
+    </Node>
+    <Node Name="AccessType" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3f30b244-f7db-4405-a422-9e949c959b26}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{3597eba8-b3a0-47ba-bf74-6da9b3a2eb7d}" />
+    </Node>
+    <Node Name="Size" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f0627e72-a851-4a66-a07a-e06e7f2a0793}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{fb3af76e-9cbf-4484-8d6e-f16a80ec9e05}" />
+    </Node>
+    <Node Name="SubIndex" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d99de8e1-9760-4844-98ca-38ff15e88f97}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{4b4f6953-ec47-43c8-944d-e48070a0f1da}" />
+    </Node>
+    <Node Name="Formula" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{45ab8ee7-a49d-417f-aecf-108f169dac2c}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{0aac83ce-1e0f-41f5-9d81-ff75ed1031f9}" />
+    </Node>
+    <Node Name="pData" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{bc089f04-e563-4d5c-a5ca-ede4186ede69}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{daba9afa-e18c-453b-8c57-ff5ccbd691c5}" />
+    </Node>
+  </Node>
+  <Node Name="IODSubObject" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Defines an subobject" ObjectGUID="{688c84e8-586e-495e-b404-15aaea820305}">
+    <Node Name="RefuseSDOAccess" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{319a6315-1333-48bc-81d7-6c4e5fd1b2d0}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{ce74f012-11fa-4cc9-b5c7-08629e6e55de}" />
+    </Node>
+    <Node Name="SubIndex" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2f11387a-9f90-4756-b6fe-822e666e56b5}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{431b32f8-3196-49da-ad35-fcfc3f57bd13}" />
+    </Node>
+    <Node Name="Formula" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6b0502a4-231d-4f75-8a7f-f8530ee5d1d4}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{d0da1907-e873-43a6-a26f-cb69808a4c7e}" />
+    </Node>
+    <Node Name="AccessType" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7475c1b5-b3b7-42cf-acd9-d577ef8ceef5}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{a002e7b9-d715-46ca-9803-676180d56f09}" />
+    </Node>
+    <Node Name="Size" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{077f5c5c-442d-46d9-a8a2-e83e9aca86e6}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{0b99c085-789c-4c8e-a7bd-32a22c28e701}" />
+    </Node>
+    <Node Name="DataType" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1fad8eac-64fc-48e1-a369-d04c0c1b8d71}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{eb284931-a07a-4c2b-b9c6-376105c6ec81}" />
+    </Node>
+    <Node Name="pDefault" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7b5418c3-cb45-4ba0-81c8-1e6a8c661abf}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{da3f1e0b-7219-4cd8-be36-616e6b32f55a}" />
+    </Node>
+    <Node Name="pData" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b7802bf7-ddbb-4936-84fc-6a8703d73223}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{06440a0f-a510-41bf-b9bb-2f9f416bb182}" />
+    </Node>
+  </Node>
+  <Node Name="Read" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{9c750a54-3ff4-41ee-b0a8-5cfe84338f96}" />
+  <Node Name="IObjectDictionary" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Defines the interface of a CANopen Object Dictionary" ObjectGUID="{eeb206ac-4aee-4efb-85d2-13900bf7124d}">
+    <Node Name="RaiseWriteObject" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Used to thrigger a write object. All IODCallback instances will be informed.&#xD;&#xA;Returns ABORT_CODE.SUCCESSFUL if writing is permitted else error reason." ObjectGUID="{efa689de-23d1-411a-b339-6736896a5a92}" />
+    <Node Name="RaiseReadObject" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Used to raise a read object event. All IODCallback instances will be informed.&#xD;&#xA;Returns ABORT_CODE.SUCCESSFUL if reading is permitted else error reason." ObjectGUID="{660f096f-ddb5-4e67-b04b-f1ba439c029d}" />
+    <Node Name="RaiseObjectChanged" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Used to trigger an object changed event. Must be called if object is modified manually by writing to the object memory.&#xD;&#xA;All IODCallback instances will be informed." ObjectGUID="{e0e8e742-9c35-4fab-b735-f29109fe0988}" />
+    <Node Name="UnregisterCallback" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Unregister ObjectDictionary callback. Returns TRUE if unregistering was successful." ObjectGUID="{9114767b-08a2-4d7e-a4e9-f4d8d60e15fa}" />
+    <Node Name="RegisterCallback" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Registers a callback to control object changes and get changed events. Returns TRUE if callback was successfully registered." ObjectGUID="{dd91e7b0-48c3-4e5c-9dda-e9b0ba303b27}" />
+    <Node Name="GetObject" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Used to get an object with a specific index." ObjectGUID="{c3f23591-9005-42f9-bae1-a753fc01b088}" />
+    <Node Name="GetObjectToWrite" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Used to search for an object and checking general write permission (access rights and data size).&#xD;&#xA;Returns ABORTCODE.SUCCESSFUL if writing is allowed.&#xD;&#xA;Only needed if writing permission should be checked without writing immediately to the object." ObjectGUID="{968d8dd3-cb0d-4216-ab38-52fcfb7d3333}" />
+    <Node Name="WriteObjectByAddress" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Used to write an object in the local object dictionary. If ABORT_CODE.SUCCESSFUL is returned data in pbyData was copied to the object.&#xD;&#xA;If error occured the corresponding abort code is returned." ObjectGUID="{2a3026d3-2b87-4866-bfae-1e6ef6e71b13}" />
+    <Node Name="WriteObject" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Used to write an object in the local object dictionary. If ABORT_CODE.SUCCESSFUL is returned data in pbyData was copied to the object.&#xD;&#xA;If error occured the corresponding abort code is returned.&#xD;&#xA;Difference to WriteObjectByAddress: Better performance because itfObject is an input variable =&gt; no internal binary search necessary." ObjectGUID="{e0a2e353-f661-4660-89f7-b915585b0c3b}" />
+    <Node Name="ReadObjectByAddress" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Used to read an object in the local object dictionary. If ABORT_CODE.SUCCESSFUL is returned pbyData contains the read data.&#xD;&#xA;If error occured the corresponding abort code is returned." ObjectGUID="{b6acc942-dc63-4007-9ca8-7f7c2af7f697}" />
+    <Node Name="ReadObject" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Used to read an object in the local object dictionary. If ABORT_CODE.SUCCESSFUL is returned pbyData contains the read data.&#xD;&#xA;If error occured the corresponding abort code is returned.&#xD;&#xA;Difference to ReadObjectByAddress: Better performance because itfObject is an input variable =&gt; no internal binary search necessary." ObjectGUID="{6339d763-072f-4585-b517-713a5560138b}" />
+  </Node>
+  <Node Name="Callback" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{e4bdc6ef-2086-481b-bf96-31326afef72b}" />
+  <Node Name="Events" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{b611fbf8-48a4-4e90-8586-0cae5dcdf615}" />
+  <Node Name="Search" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{85818ab0-8c01-48e1-ac59-f7f109173713}" />
+  <Node Name="Write" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{64082d09-072a-4438-8e7c-7b7b0bc6cc70}" />
+  <Node Name="MemCopy" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{e4ffc163-582d-48df-902b-8ae3523bd4e9}" />
+  <Node Name="MemSwap" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{f18f8d0c-a48b-450c-8f46-ec209ad19874}" />
+  <Node Name="OBJECT_PROPERTIES" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{7046cfb4-c272-4109-8830-58180fba8203}" />
+  <Node Name="ABORT_CODE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="SDO abort codes as defined by CiA-301" ObjectGUID="{828c4f3a-8f6b-44a1-8e51-ba07e7480403}" />
+  <Node Name="DATA_TYPE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="CANopen data types as defined by CiA-301" ObjectGUID="{0e67cf2c-7dd4-4ecb-90d4-ded0587c2e50}" />
+  <Node Name="Communication Objects" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{ae372f0a-2b37-4aeb-b158-6d26559adfba}" />
+  <Node Name="ObjectDictionary" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{d388f008-437f-490f-a237-05a5fbd42af2}" />
+  <Node Name="TPDOObject" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{3a264a7b-6230-4ce0-a1a1-7e0e9d634796}">
+    <Node Name="OnPDOEnabledChanged" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{24abf988-71c1-4896-8e72-3179673f51f0}" />
+    <Node Name="PDOSettingsChanged" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{1eaf7dbf-ea06-4387-a939-be31e4da0c98}" />
+    <Node Name="Active" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{96b733b3-d174-4bbb-b53b-118b315afb37}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{808c2426-6330-4ac4-adfc-48dbac556d52}" />
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{17a4556e-bd49-4b8a-95aa-0d7327eb51c9}" />
+    </Node>
+    <Node Name="OnSyncEvent" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{97040de8-9884-4c2c-8f44-496af435da91}" />
+    <Node Name="FB_Init" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{2ec4e8d5-eb80-4686-ae62-2d6b1af0d21c}" />
+    <Node Name="CopyToPDO" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{18e06bcb-11e8-489d-bcf1-a1fe9299f380}" />
+    <Node Name="Current" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{06592af9-543b-49d4-b74f-ad9d6b0c8fba}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{9adad26e-e273-402c-a30f-96264cbd703a}" />
+    </Node>
+    <Node Name="SendPDOs" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{39962a37-e4fe-415b-9eac-4533c95c2cd8}" />
+  </Node>
+  <Node Name="PDO" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{c1b937b7-62d3-47f7-b0fe-607eaa7223ae}" />
+  <Node Name="CANopen Help Functions" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{18b3502c-f664-4cde-a0b0-3a7f9df932e4}" />
+  <Node Name="Event Handler" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{1f514e14-ad56-49d5-ba4b-842bd592b094}" />
+  <Node Name="IBase" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{aef9bbd6-a9a2-4dc6-a3d9-a58946b6930d}" />
+  <Node Name="Structs" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{40d3dd0a-a694-420e-af9a-a435bcff4a4a}" />
+  <Node Name="ObjectDictionary" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{3242981d-933b-4b8f-a72f-6ebf0f343c6e}" />
+  <Node Name="ICmpIoDrvParameter" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{ac0cf825-be20-43ce-a80a-9c8b07783b80}" />
+  <Node Name="EMCY_TYPE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{f0d126f2-77ea-496b-818b-7e6b082310b7}" />
+  <Node Name="CANopenDevice" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{53b4815b-da18-49ec-9d11-230b2cf2f640}">
+    <Node Name="FB_Init" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{ea24b66a-99cc-4e26-bbce-342d3c9763c6}" />
+    <Node Name="IoDrvGetModuleDiagnosis" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{37d8bc1e-894a-49f5-a83f-8515e182aa85}" />
+    <Node Name="InitOD" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{a74be89e-74bc-4598-b2d8-0c6129a00256}" />
+    <Node Name="IoDrvScanModules" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{4da419d4-e4da-463b-912f-f1e705cbeae2}" />
+    <Node Name="QueryInterface" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{d8fef178-fad1-49e6-a3e7-2776bb357e4b}" />
+    <Node Name="StopSDOServer" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{ddc7759a-30ee-4b1d-b6f1-5858c5d6e3f7}" />
+    <Node Name="IoDrvUpdateMapping" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{0e06d826-9995-41eb-8b33-94afeebf5a35}" />
+    <Node Name="Initialize" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{91c734b9-f019-4afa-aca4-b694f5b2dd6b}" />
+    <Node Name="FB_Exit" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{4e7368cd-8e66-4cf2-8417-9d40a8a9be62}" />
+    <Node Name="IoDrvReadInputs" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{8352a441-ba57-418e-8a4b-fb6cb58fc4e0}" />
+    <Node Name="DoSDO" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{7478f153-0537-4545-be78-31d0e310ed37}" />
+    <Node Name="EventHandler" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{7c88ae14-7bd9-4742-995a-2da14015876c}" />
+    <Node Name="IoDrvWriteOutputs" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{b85bf9f5-b4db-4a7a-b09c-d47ecd655926}" />
+    <Node Name="IoDrvStartBusCycle" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{32f95ebe-2a46-43d5-9d7a-f6b4863b8930}" />
+    <Node Name="SetupIoChannels" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{06050fee-dfe8-434d-92dc-beb9bdb7acb7}" />
+    <Node Name="CheckLicense" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{9b0aa500-c30e-4122-8bb7-ca4c3456cdc6}" />
+    <Node Name="SetupPDOs" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{7e26ecbe-adad-4275-a3a0-fee09045b037}" />
+    <Node Name="IoDrvIdentify" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{e8029388-30fd-4f42-907f-f8b1239b4364}" />
+    <Node Name="IoDrvWriteParameter" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{428a4bf1-f2b0-4ca1-ba9c-ec589df63d91}" />
+    <Node Name="StartSync" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{63de3f7f-842a-4150-949f-55eb6bd11482}" />
+    <Node Name="IsEndOfBusCycle" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{c9b631b8-acb6-4660-a4f7-d4cacb9dba57}" />
+    <Node Name="DoSRDOTaskEnd" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{9bdfc748-d071-4645-9006-4945e4e1bda5}" />
+    <Node Name="DoSRDOTaskStart" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{17d487b3-cb97-42bc-8f10-0bc3b615e202}" />
+    <Node Name="StopSRDOCommunication" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{706538f1-602e-484f-b9b3-ed15521e2c40}" />
+    <Node Name="PowerUp" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Only possible in PowerDown state. Boots the slave. A NMT bootup message is sended if slave enters PREOPERATIONAL state again.&#xD;&#xA;NOTE: PowerDown and PowerUp can result in higher bus cycle times because ObjectDictionary must be intialized agaín." ObjectGUID="{fab442ff-23b5-4e00-95fd-9bbdc0c47e1b}" />
+    <Node Name="pTPDOCtxArray" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{9474b5bc-2760-44e3-87a9-a37cf250640c}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{5f64b37a-d1cb-4a9c-b1b6-edf7e9ebe52b}" />
+    </Node>
+    <Node Name="OnHeartbeatConsumingWrite" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{373225a5-8ab4-4c30-a22d-e79eb9af5ece}" />
+    <Node Name="HeartbeatConsumingChanged" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{05da24eb-8b34-4c4b-964a-3a41ca86fda0}" />
+    <Node Name="ReadHeartbeatConsumer" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{41d3a75e-d846-488f-9285-cd8481aaf6f4}" />
+    <Node Name="SendHeartbeatMessage" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{0cf3697a-ea26-48ea-b94f-803850e448fa}" />
+    <Node Name="SwitchToOp" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Switches the slave to OPERATIONAL state.&#xD;&#xA;As defined by CiA-301 following services will be performed in this state:&#xD;&#xA;PDO (I/Os), SDO, SYNC, TIME, EMCY, NMT.&#xD;&#xA;State transition is only possible in PREOPERATIONAL or STOPPED state." ObjectGUID="{5e988525-1f33-4f52-bdcb-b608e81ea39b}" />
+    <Node Name="ResetApplicationObjects" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{2b3f8f4a-c66a-4b67-82e1-8355d015e401}" />
+    <Node Name="ReadCycleTime" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{ad5facf0-bdcd-4651-be8f-346b9a0c96b6}" />
+    <Node Name="Reset" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Complete reset of the slave. All objects will be set back to default values. A NMT bootup message is sended if slave enters PREOPERATIONAL state again.&#xD;&#xA;NOTE: A reset can result in higher bus cycle times because ObjectDictionary must be intialized agaín. " ObjectGUID="{2c7f47a0-cad8-4493-81e2-afe2a5bbd954}" />
+    <Node Name="GuardingSettingsChanged" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{8a16bdaa-27a4-4991-b137-71df78edb12d}" />
+    <Node Name="SwitchToPreop" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Switches the slave to PREOPERATIONAL state.&#xD;&#xA;As defined by CiA-301 following services will be performed in this state:&#xD;&#xA;SDO, SYNC, TIME, EMCY, NMT.&#xD;&#xA;State transition is only possible in STOPPED or OPERATIONAL state." ObjectGUID="{9d97a35d-354c-487f-824c-d46af14fe7ef}" />
+    <Node Name="ResetCommunication" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Reset communication of the slave. As defined by CiA-301 only communication objects (Index &lt;16#2000) will be set back to default values.&#xD;&#xA;A NMT bootup message is sended if slave enters PREOPERATIONAL state again.&#xD;&#xA;NOTE: A reset can result in higher bus cycle times because ObjectDictionary must be intialized agaín. " ObjectGUID="{e93b49e3-1b79-4560-b1e8-394f42f03f76}" />
+    <Node Name="OnWriteObject" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{baf09707-1159-4d97-ab3d-626a6e0e6e8a}" />
+    <Node Name="GetState" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{4245bf1d-0b22-4e49-b241-c98ff7735bfd}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{3ea0ea2c-16b2-4a2c-9bf6-a1c9b4e57cf5}" />
+    </Node>
+    <Node Name="SwitchToStopped" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Switches the slave to STOPPED state.&#xD;&#xA;As defined by CiA-301 following services will be performed in this state:&#xD;&#xA;NMT.&#xD;&#xA;State transition is only possible in PREOPERATIONAL or OPERATIONAL state." ObjectGUID="{af8a187e-37ca-4675-a83e-9f1332f8ec54}" />
+    <Node Name="OnReadObject" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{84f1f75b-6efc-4990-b84c-a86d1080e131}" />
+    <Node Name="StartEMCY" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{3e2cc102-de08-4ce8-bfd5-aac5c054ce6f}" />
+    <Node Name="ObjectDictionary" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{84ced41f-1e61-43f9-94e0-ee70450ac5aa}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Returns the Object Dictionary of a slave.&#xD;&#xA;See IObjectDictionary for further information.&#xD;&#xA;ObjectDictionary of slave (see IObjectDictionary)." IsHidden="true" ObjectGUID="{b4fa567b-d5d5-4282-a084-7a4a8810f1bd}" />
+    </Node>
+    <Node Name="StartSDOServer" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{ae538f83-2a34-4977-9562-6d6b7c3b992d}" />
+    <Node Name="DoReceivePDO" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{eb5fd4aa-bf11-45e8-a169-ea628fd7b336}" />
+    <Node Name="StopPDOCommunication" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{a2252c72-77b6-4342-9501-9e3d87f21bf8}" />
+    <Node Name="itfRPDOObject" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0a085ef0-394b-43a3-a773-f7bfd498d538}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{6b1b48f5-b7bb-44d3-a4af-afebe9523fbf}" />
+    </Node>
+    <Node Name="itfTPDOObject" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{fd25ce13-6d10-47c8-8dd2-ee5e7be13ac7}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{3a0ce6c8-205c-41f1-bcb7-2df52b857ed4}" />
+    </Node>
+    <Node Name="StopEMCY" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{a1f40c48-ceb3-4d1d-85b9-6620564de21a}" />
+    <Node Name="itfState" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6a8fe634-1ea4-4d4b-954e-f29588440d3b}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{582b1888-9f44-40d5-88d2-05a807326f41}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{ff210658-e1da-468e-a140-3c01e2cc40ae}" />
+    </Node>
+    <Node Name="NodeID" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3370801a-908d-41bb-8b8a-e6f77323ee78}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Returns the current NodeID. Range: 1..127&#xD;&#xA;Current NodeID" IsHidden="true" ObjectGUID="{c036c660-bf96-4d5e-ba65-813df64cc21e}" />
+    </Node>
+    <Node Name="dwCycleTime" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{75f0e18d-8d1f-4306-aca5-0271fb3323bc}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{3e296900-7b18-4f88-b4ab-8ed2e9e7df07}" />
+    </Node>
+    <Node Name="dwHalfTaskCycle" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{18504ae9-cf35-4e9d-874d-120b53bc36b8}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{44407f03-4f61-4ec7-aac2-3266c19566f9}" />
+    </Node>
+    <Node Name="itfSyncObject" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c9b9b12b-dcf8-4cff-a8cc-d64c06e97004}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{09954f04-4884-4958-a1d3-d702757dd5e0}" />
+    </Node>
+    <Node Name="dwCurTime" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{75ad6a90-e5f2-44a2-a7c9-5e0ad712e17a}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{a0492810-f6af-4447-b89a-dc189c6a8c58}" />
+    </Node>
+    <Node Name="StartPDOCommunication" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{8c94a66f-bc3a-43c5-9a76-be6afba67a3b}" />
+    <Node Name="DoTransmitPDO" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{700fe2e4-6ae0-483b-ab1e-2cce59ea3224}" />
+    <Node Name="StopNMTServer" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{c9791935-8bca-44ad-8788-15fbdbcf6bcb}" />
+    <Node Name="OnObjectChanged" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{eb430c66-a5a7-42ea-955e-d138c2770477}" />
+    <Node Name="StopGuarding" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{75405478-6ba5-4fa7-87f2-6daeaff5aee9}" />
+    <Node Name="DoGuarding" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{242226bb-449c-4f5b-a205-a5a4c673b21b}" />
+    <Node Name="pRPDOCtxArray" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{efbbb4be-a1ba-44bb-b4bf-162168dfb85d}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{2a442edd-9356-4d17-bdc2-bfc73cec52b1}" />
+    </Node>
+    <Node Name="State" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f11adc08-0af3-45a6-a8df-d857a32592e8}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Returns the current CANopen state.&#xD;&#xA;current CANopen state" IsHidden="true" ObjectGUID="{d8e6efd1-9458-4497-802c-457e4a60dab3}" />
+    </Node>
+    <Node Name="DoNMT" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{64f3c7f7-1066-420e-aaab-a08bba1e70fa}" />
+    <Node Name="HandleNMTMessage" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{e6f0f7cc-9189-4d54-b560-c989e00aaf2e}" />
+    <Node Name="StartNMTServer" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{a7792806-093d-454d-a7c5-767daecb2034}" />
+    <Node Name="SetNodeID" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Method to set the NodeID of the CANopen Slave. If called in first cycle of the buscycle task NodeID will be changed before the&#xD;&#xA;CANopen Slave state machine starts. Else, a call to this method will reboot the slave with the new NodeID.&#xD;&#xA;Calling this method will lead to higher bus cycle times because Object Dictionary must be initialized." ObjectGUID="{1a894175-4603-4d97-9b85-20a99f11f638}" />
+    <Node Name="StateInterfaces" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c9ffd1c4-85ea-4809-8a8e-58b3c371026a}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{d19ce1c5-0ef7-48a9-a8b2-76a218cd57a6}" />
+    </Node>
+    <Node Name="ResetComObjects" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{ae5e6f4c-efc8-4c06-ad1f-8c56b306be0b}" />
+    <Node Name="Driver" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{9f7bbe29-9690-49df-bbc5-702b5c1e5f85}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{27b51a75-7f1b-464d-b1e6-2f646217b5f7}" />
+    </Node>
+    <Node Name="StartSRDOCommunication" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{096b4e8f-380e-47e0-8d01-3184a9ec0feb}" />
+    <Node Name="CheckBus" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{a8d3bb2d-3e34-4a28-94b9-2ca42a08460f}" />
+    <Node Name="StopSync" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{be01adcf-92c8-408c-a30f-69e0652a3feb}" />
+    <Node Name="GeneralActions" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{9ec6731d-a191-4ecb-b7cb-7fc348ae8ece}" />
+    <Node Name="ReadGuardingRequest" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{78ac2eb0-9569-4a48-8c75-f2c05d3a2b35}" />
+    <Node Name="StartGuarding" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{271ebfad-7fb4-4dc0-ba88-b48e43495bce}" />
+    <Node Name="DoSync" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{132a091a-9c6c-47ad-8350-9d38f04db76e}" />
+    <Node Name="SetEmcy" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{81603583-9c30-47fb-9042-80bb5eee150a}" />
+    <Node Name="PowerDown" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Deactivates the CANopenDevice. This state transition is possible in all states.&#xD;&#xA;The device can be activated again by calling PowerUp.&#xD;&#xA;NOTE: PowerDown and PowerUp can result in higher bus cycle times because ObjectDictionary must be intialized agaín. " ObjectGUID="{4ace5d0b-8379-41f8-83b8-95f03fbe0cf5}" />
+    <Node Name="IoDrvGetInfo" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{44d685cb-a748-4a84-ae18-5aeb4de13370}" />
+    <Node Name="IoDrvReadParameter" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{45d9c6b6-8755-4720-9f2d-610aa5365c14}" />
+    <Node Name="FB_Reinit" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{779df8c4-7565-4fe0-a4e6-8a083ed234f5}" />
+    <Node Name="SetDiagString" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{13ccf47c-09e2-40ae-9ebc-4d02f823a9e7}" />
+    <Node Name="ResetEmcy" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{0b0f57de-5a15-44c4-aae3-fe600944433e}" />
+    <Node Name="ReadGuardingObjects" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{b60b9305-d46d-42ee-a062-d68a4f18b6fc}" />
+    <Node Name="SendGuardingResponse" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{bcfbd3cf-e9d0-41b3-b847-5caa0104f381}" />
+    <Node Name="IoDrvUpdateConfiguration" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{0bafc962-6841-4286-b55a-d697972e25d0}" />
+    <Node Name="IoDrvWatchdogTrigger" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{c14840ab-371b-4247-95c9-dd590643288d}" />
+  </Node>
+  <Node Name="HEARTBEAT_CONSUMER_CTX" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{fac5f189-6e05-4199-b2b2-e19644969645}" />
+  <Node Name="TSP" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{be7b9c25-a951-4070-b405-62bcec04ce01}" />
+  <Node Name="RPDO_CTX" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{90b032a6-fa54-4c41-a91b-15642a349ef3}" />
+  <Node Name="ICmpIoDrv" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{bbb5766d-e6a7-476c-8654-980d2bbe53c3}" />
+  <Node Name="Sync" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{7390b98e-00cf-4913-821c-33d104c23737}" />
+  <Node Name="Setup" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{acbdf6a1-cdc6-4cd5-a0b8-dc18cbb64fe3}" />
+  <Node Name="SyncObject" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{91b65a1e-b9e1-466e-8537-ffbb4b2f3a67}">
+    <Node Name="ExtendedID" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{02243d20-50bd-4991-816e-4cca8a317e8d}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{d8105be6-56e4-49eb-94fe-f9688f93fad5}" />
+    </Node>
+    <Node Name="pDevice" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f9ae2403-26e4-416a-b51b-326a015fc6d9}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{efaa4c38-297f-405c-aa8b-98ab4fd53401}" />
+    </Node>
+    <Node Name="OnSyncCOBIDWrite" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{40d89799-b894-4aa2-9259-0e92616a5d7b}" />
+    <Node Name="SyncProducing" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{934d6c4b-f67a-49f8-88b2-e605da7a82eb}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{86ea324f-8377-45ed-96f4-a84ba4d02890}" />
+    </Node>
+    <Node Name="COBID" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3ac33ede-5ca5-49e2-883b-caa237a87468}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{9adcbc18-10ce-4417-8f1c-ab71ddd0274a}" />
+    </Node>
+    <Node Name="Active" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{68d3493f-2158-4f8f-985d-8e058cd1158b}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{83589e4a-e9c4-46e1-b054-69e95f55b8c2}" />
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{d968217e-4886-464c-a97c-dd0a49261a4e}" />
+    </Node>
+    <Node Name="DoSync" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{c3b9f3c2-0f65-4b26-9238-7cf8b8d9d276}" />
+    <Node Name="RegisterRPDO" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{e8a645b2-41d4-4ff6-a89f-081aab91eae0}" />
+    <Node Name="UnregisterRPDO" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{9f3e5e4a-a919-48f5-8c01-c9e22cc1d2d8}" />
+    <Node Name="ComCyclePeriod" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{356a20ce-b018-4bab-9a41-e2aadaf4d637}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{d4b1791f-bd90-4665-be80-2e7bc43f2a54}" />
+    </Node>
+    <Node Name="OnSyncSettingsChanged" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{113084d0-2a8e-4e14-84de-8a49cdac6510}" />
+  </Node>
+  <Node Name="ResetEvent" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{a8dbf229-ef38-4932-9f1d-b0dc3de09d14}" />
+  <Node Name="GlobalConstants" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{d42277c3-f8ce-4678-8b8f-1a270132da9a}" />
+  <Node Name="GlobalHelper" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{89c9e982-c369-4f5f-99d0-0b8027185ef9}" />
+  <Node Name="StartEvent" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{c709fb48-1316-47c5-9e75-37535edbb127}" />
+  <Node Name="TPDO_CTX" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{f0adcc8e-9222-4cbc-948c-050695bcf179}" />
+  <Node Name="StopEvent" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{1811fd94-6515-4f91-a720-157973220ea4}" />
+  <Node Name="Events" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{5a33edd1-839c-444c-8d1b-7a8c2c10f9f2}" />
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="SDO_SERVER_STATE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{22031c48-7975-43ec-b73e-c7b75df6a68b}" />
+  <Node Name="EMCY" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{67c4c5d7-c7a6-4e41-83cc-a7543caef11c}" />
+  <Node Name="ERROR_REGISTER" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{740b490f-fbe2-483e-9e49-5573b3ba7ce0}" />
+  <Node Name="Unions" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{44eff49e-1301-4902-ae39-f2d8ef61a7d3}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{1a0268e3-ffdd-4b3f-b563-1ce7a19597fd}" />
+  <Node Name="EventHandler" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{a612aed5-f25e-491d-9444-77f0ca2aac53}" />
+  <Node Name="ERROR" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Errors returned by CANopen Slave API functions" ObjectGUID="{ec228cc4-0dec-4a0e-a71d-8ef961e90467}" />
+  <Node Name="GetEMCYCode" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{d16e3169-2711-403e-b54a-e9ff6de5f6c4}" />
+  <Node Name="PDO" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{ffe28ce8-71c0-4cb3-bc02-4d9dd2e6c9e1}" />
+  <Node Name="CANOPEN_STATE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="CANopen states as defined by CiA-301" ObjectGUID="{ba0280e7-44f4-4136-ab67-b405339707dc}" />
+  <Node Name="Memory Functions" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{f166e1b8-f197-4d6c-a6fc-af6d789bf256}" />
+  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="PDOs" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{fd5f19c5-fd47-49fb-81ec-b6e3624e628d}" />
+  <Node Name="Enums" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{5d9c95a2-9139-499f-af55-9ccde3d46998}" />
+  <Node Name="MemCmpDWORD" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{759a260e-091a-4d19-9990-7148f57d4934}" />
+  <Node Name="BitCpy" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" IsHidden="true" ObjectGUID="{e483be17-7323-44c4-944e-2a721453bc22}" />
+</Library>

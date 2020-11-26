@@ -1,0 +1,7 @@
+#IoStandard
+#IoDrvBase
+CmpErrors Interfaces, * (System)
+Base Interfaces, * (System)
+#SysMem
+#SysCpuHandling
+SysTypes2 Interfaces, * (System)

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="IIoDrvProfibus, 3.4.0.0 (System)">
+  <Node Name="ICmpIoDrvProfibus" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e88e8671-ae74-47a2-9c8b-464aa76cfdc0}">
+    <Node Name="Freeze" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{90870f25-1086-455e-b07a-cda46448d55b}" />
+    <Node Name="UnSync" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{47a32e63-37c4-4e64-95c7-ce7304281ced}" />
+    <Node Name="Sync" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{9ade139c-49f6-42c1-93a4-3a3ceb5fa550}" />
+    <Node Name="ClearData" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{9ba4ced2-c30c-49e1-a7b0-cb1f08534d3c}" />
+    <Node Name="Unfreeze" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{20251c56-8019-4569-90a5-3939e0932c5b}" />
+  </Node>
+  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="OperationStates" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{8ca0848c-2c0f-46ea-96dc-b833e1d8a4d3}" />
+  <Node Name="ICmpIoDrvPbSlaveActivation" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="Interface to activate or deactivate slaves" ObjectGUID="{221b5b7f-05bb-44cc-a063-bd99f0afb933}">
+    <Node Name="GetSlaveActivation" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c9ded160-84ed-4e3b-bc87-c1c86f571a47}" />
+    <Node Name="SetSlaveActivation" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="This methods sets the activation flags of a specified flags" ObjectGUID="{0ca0c236-037b-4571-9a31-2c3708d08fc5}" />
+  </Node>
+  <Node Name="SlaveActivationCommands" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{602c941b-c353-410e-94f4-65f1247a2b2f}" />
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="PB_SlaveActivation" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{5d586fad-3a64-478a-a72f-1f311209b724}" />
+  <Node Name="ICmpIoDrvProfibusConfig" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b5abf42b-ecf0-43bb-aef7-49122f4179fc}">
+    <Node Name="GetSlaveConfiguration" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{74cd3807-f3dc-466a-9653-00384cb4f70e}" />
+  </Node>
+  <Node Name="PB_SlaveConfigurationData" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6565db87-9e4e-4659-82c1-88fba0047ebf}" />
+  <Node Name="InterfaceIDs" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{690812de-0c9b-458d-9428-b9c43409c083}" />
+</Library>

@@ -1,0 +1,12 @@
+#CAA Types
+#SysTarget
+#UDP
+#SysMem
+#CAA MemBlockMan
+#CAA Callback
+SysTypes2 Interfaces, * (System)
+#MemoryUtils
+#Standard
+#CmpLog
+CmpErrors2 Interfaces, * (System)
+#SysSocket

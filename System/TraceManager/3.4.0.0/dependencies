@@ -1,0 +1,12 @@
+Dataserver Interfaces 2, * (System)
+IBase, * (System)
+IIecVarAccess3, * (System)
+#Standard
+#CmpApp
+#SysMem
+#SysSem
+#SysFile
+#CmpIecVarAccess
+#SysTime
+#SysTimeRtc
+SysTypes, * (System)

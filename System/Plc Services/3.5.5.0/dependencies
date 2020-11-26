@@ -1,0 +1,17 @@
+#SysTime
+#SysFile
+#CmpChannelClientIec
+#CmpLog
+#CmpBinTagUtilIec
+#SysMem
+#Collections
+#Standard
+#Component Manager
+Visu User Mgmt Interfaces, * (System)
+Data Server Interfaces, * (System)
+Alarm Manager Interfaces, * (Intern)
+Monitoring Data Interfaces, * (System)
+Collections Interfaces, * (System)
+Base Interfaces, * (System)
+Trace Mgr2 Interfaces, * (Intern)
+CmpErrors2 Interfaces, * (System)

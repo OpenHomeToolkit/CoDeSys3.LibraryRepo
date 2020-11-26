@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="SysIecTasks23, 3.5.13.0 (System)">
+  <Node Name="SysIECTaskResetEvent" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="This function resets the event of an event task. This function is not implemented in V3 and returns FALSE" ObjectGUID="{bf9e19b3-7d68-4748-bdeb-d334133cf8c0}" />
+  <Node Name="SysIECTaskGetInfo" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="This function returns iec task information" ObjectGUID="{160f62fd-283c-4d50-9230-f5f7e3ac4cb5}" />
+  <Node Name="SysIECTaskGetConfig" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" This function return the iec task configuration " ObjectGUID="{270e5cf2-56d1-4bfe-9945-dfa362fa8d04}" />
+  <Node Name="SysIECGetFctPointer" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="This function returns the address of a function. This function is not implemented in V3 and return 0" ObjectGUID="{9ce70205-ad9e-4e29-ab53-57d02ad3e698}" />
+  <Node Name="SYSIECTASKINFO" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e9ba26fa-5b21-4a74-97c3-3df60d77dc8f}" />
+  <Node Name="SYSIECTASKCONFENTRY" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b3c60d6b-3d46-4b71-8f9a-554c0a07b267}" />
+  <Node Name="Project information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="LDATAREF_TYPE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a1503fde-3006-482a-902c-985dc8002f95}" />
+  <Node Name="Globale_Variablen" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b9824a9d-0cf8-442d-a00e-16bfd7b6e810}" />
+  <Node Name="Bibliotheksverwalter" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{9d27cb12-38dd-45ec-8e63-b18ee06cbd3e}" />
+</Library>

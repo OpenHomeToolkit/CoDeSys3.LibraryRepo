@@ -1,0 +1,23 @@
+#3SLicense#97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b
+#CmpSchedule
+#SysTime
+#CmpLog
+#Component Manager
+#IoStandard
+#SysCpuHandling
+#SysMem
+#SysShm
+#SysPci
+#CmpSettings
+#Standard
+#IoDrvBase
+#CAA Types
+#CAA Device Diagnosis
+#CAA List And Tree
+IoDriver Profibus Interfaces, * (System)
+IoDriver DPV1C1 Interfaces, * (System)
+IoDriver Interfaces, * (System)
+IoDriver Parameter Interfaces, * (System)
+Base Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+SysTypes2 Interfaces, * (System)

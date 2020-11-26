@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="AC_Trend, 3.5.11.0 (3S - Smart Software Solutions GmbH)">
+  <Node Name="GenTrend_VisuTemplate_2" TypeGUID="{f18bec89-9fef-401d-9953-2f11739a6808}" EmbeddedTypeGUIDs="" ObjectGUID="{d540d12a-4825-41c0-a6dd-093c928dc7ae}" />
+  <Node Name="GenTrend_VisuTemplate_1" TypeGUID="{f18bec89-9fef-401d-9953-2f11739a6808}" EmbeddedTypeGUIDs="" ObjectGUID="{02d77a34-e1f2-437d-a265-8f0960af8f82}" />
+  <Node Name="GenTrend_VisuTemplate" TypeGUID="{f18bec89-9fef-401d-9953-2f11739a6808}" EmbeddedTypeGUIDs="" ObjectGUID="{03db761c-f4dd-4586-af81-ac29728387d4}" />
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{64b85eed-ad5d-4754-a949-6502b70cdfd6}" />
+  <Node Name="GlobalTextList" TypeGUID="{63784cbb-9ba0-45e6-9d69-babf3f040511}" EmbeddedTypeGUIDs="" ObjectGUID="{b5430773-3042-47d6-a6d3-28650a6ce532}" />
+  <Node Name="AC_Trend" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{89a084ec-7f31-452b-b608-dac9b4a3871e}" />
+</Library>

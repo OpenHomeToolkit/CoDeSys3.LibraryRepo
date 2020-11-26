@@ -1,0 +1,9 @@
+#CAA Behaviour Model
+#IoStandard
+#CAA Types
+#CAA FB Factory
+#CmpEventMgr
+IoDriver Interfaces, * (System)
+Base Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+SysTypes2 Interfaces, * (System)

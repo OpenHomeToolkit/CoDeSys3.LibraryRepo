@@ -1,0 +1,19 @@
+#CmpEventMgr
+#IoStandard
+#CmpLog
+#Standard
+#CAA MemBlockMan
+#IoDrvCifXBase
+#3SLicense#97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b
+#SysMem
+#CmpSettings
+IoDriver ProfiNet Device Interfaces, * (3S - Smart Software Solutions GmbH)
+SysTypes2 Interfaces, * (System)
+#SysFile
+#SysTime
+#CmpSchedule
+CmpErrors2 Interfaces, * (System)
+#CmpHilscherCIFX
+#CAA Device Diagnosis
+#CAA Types
+#CmpAsyncMgr

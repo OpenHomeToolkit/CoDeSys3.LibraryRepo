@@ -1,0 +1,10 @@
+#SysTask
+#CmpLog
+#CmpEventMgr
+#SysSem
+#SysMem
+#SysFile
+#Standard
+#SymbolicVarsBase
+#Component Manager
+Data Server Interfaces, * (System)

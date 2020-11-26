@@ -1,0 +1,21 @@
+#IoStandard
+#SysMem
+#SysCpuHandling
+#IoDrvBase
+#CAA CanL2I
+#CAA Types
+#CAA CanL2
+#CAA MemBlockMan
+#Standard
+#SysTarget
+#3SLicense#97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b
+IoDriver Parameter Interfaces, * (System)
+IoDriver Interfaces, * (System)
+Base Interfaces, * (System)
+#SysTimeCore
+#CAA Behaviour Model
+#CmpLog
+#Component Manager
+CmpErrors2 Interfaces, * (System)
+SysTypes2 Interfaces, * (System)
+#CAA Device Diagnosis

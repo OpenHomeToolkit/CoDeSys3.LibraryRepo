@@ -1,0 +1,7 @@
+#IoStandard
+#IODrvEtherCAT
+#CmpLog
+#Standard
+CmpErrors2 Interfaces, * (System)
+#CANbusDevice
+#CAA Device Diagnosis

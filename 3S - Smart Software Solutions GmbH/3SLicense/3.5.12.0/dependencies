@@ -1,0 +1,10 @@
+#CmpLog
+#CAA Types
+#Standard
+#Component Manager
+#CmpApp
+#CmpCodeMeter
+CmpErrors2 Interfaces, * (System)
+SysTypes2 Interfaces, * (System)
+#SysCpuHandling
+#CmpEventMgr

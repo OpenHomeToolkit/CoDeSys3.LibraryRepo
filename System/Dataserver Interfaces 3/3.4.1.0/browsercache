@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="Dataserver Interfaces 3, 3.4.1.0 (System)">
+  <Node Name="DataServer_StructReplacementInfo" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{80b4b753-c6ef-4808-a860-25bbb4dbf93c}" />
+  <Node Name="IDataServer2" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{136b44dd-5f12-40d1-b31f-3aff51a692d3}">
+    <Node Name="InstancePathPrefix" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a0a3ca03-019c-44dd-9b96-d7a29d1b26b7}">
+      <Node Name="Set" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{86958d61-1e3f-4385-aee1-f76d2820be63}" />
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{99db9f8e-4b39-4863-b0ec-2895f9d11b51}" />
+    </Node>
+    <Node Name="SetCredentialsProvider" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f1e4a2e4-476e-4c75-9825-503e7897e64e}" />
+    <Node Name="GetInterface" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Optionally returns an interface with the given id when it is implemented by the impelementing function block.&#xD;&#xA; The return value will be pointer to the requested interface" ObjectGUID="{55472160-24ec-42e3-be48-d6ad94ae6927}" />
+  </Node>
+  <Node Name="IDataServer" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0c0609f2-d351-4e0f-98f4-382805b103e5}">
+    <Node Name="ReleaseData" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{18cb98a7-cd89-45ce-bff2-03280aac3397}" />
+    <Node Name="BeginDataConfiguration" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{acc03c01-d22e-404d-b834-6050c9310354}" />
+    <Node Name="GetItemInfo" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{71aac6b8-0466-44b0-b267-a70d9d030ca5}" />
+    <Node Name="AllItemsOk" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This method will return ERR_OK when all active items of all datasources have the quality good&#xD;&#xA; else it will return ERR_DS_BADITEMS.&#xD;&#xA; It might return ERR_DS_MULTITASKING_LOCKED when it is currently not possible to have access to&#xD;&#xA; all datasources. In this case the client should call this method again later." ObjectGUID="{575f06cd-836d-4765-9c7e-bfc00d0cdfef}" />
+    <Node Name="UseData" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{cd15fa30-a383-4bfd-9c00-c0c9b75105a7}" />
+    <Node Name="EndDataConfiguration" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{61c5b05c-70c2-4e14-9224-ec43f158c2f1}" />
+  </Node>
+  <Node Name="IDataServer3" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{9e4a74ad-7738-425b-8ffa-8a47cbb4f994}">
+    <Node Name="ResolveSymbol" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{cf207e08-3292-4b35-aea3-a418e8b0077d}" />
+  </Node>
+  <Node Name="IProvidesConcreteType" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{5deac0ca-dc4d-4278-9df6-fcf82355dc3a}">
+    <Node Name="ImplementingTypeId" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{9a2e864b-18c1-403c-bdc9-ca4255a54692}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{58a70b8c-8832-4a90-b06a-8b9ab0de3d4a}" />
+    </Node>
+    <Node Name="Instance" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2d79ac0d-8c0f-449f-baa8-f691fd2498ab}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{3ceab31e-cbef-4c52-a571-905e607173b9}" />
+    </Node>
+  </Node>
+  <Node Name="IDataSourceDriver" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{27cc1caa-17b7-42a4-94bf-831a273401ba}">
+    <Node Name="GetSetting" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3c5a2fcb-c9c1-445a-8fc6-d82c463e0620}" />
+    <Node Name="State" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d286af15-7732-4442-8af2-8858b335cc00}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{4119d042-c5e8-4423-9dba-8b96943c3738}" />
+    </Node>
+    <Node Name="Reset" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c9a71c8d-0f3c-4dcd-b521-b94692882bd6}" />
+    <Node Name="StartConnect" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f6f473b2-f772-4677-a7de-e65a672419f8}" />
+    <Node Name="LastError" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d7c98f2f-410d-4bed-918f-c0c7c195210d}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{16755c1d-2b15-466c-8c21-c91ee2c85280}" />
+    </Node>
+    <Node Name="WriteRequest" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{61c1b8e4-2fb3-4052-89d0-173d286a94d2}" />
+    <Node Name="UpdateRequest" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This method will be called after a request has been sent to check, whether an answer has arrived.&#xD;&#xA; As long as the driver is waiting for a reply, it can return ERR_FAILED. If there was a successful&#xD;&#xA; reply it may return ERR_OK, else an Error code describing the error. When ERR_DS_UNKNOWN_TRANSACTION&#xD;&#xA; is returned, the server assumes that the transaction is finished and will send new requests." ObjectGUID="{3703e9e9-d6fe-4f8c-b8b9-8ca2fd218958}" />
+    <Node Name="GetRequestResult" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b0bdcb3c-97db-4b68-9b26-1851f0985289}" />
+    <Node Name="ShuttingDown" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3cf34530-5cbf-476c-9590-eeeb43da88f8}" />
+    <Node Name="Initialize" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{78d4cff9-d004-45bb-af7a-09aa4602b402}" />
+    <Node Name="StartShutdown" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2857ef22-ecb7-46d4-b41a-323e52363e41}" />
+    <Node Name="Connecting" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" The driver can itself&#xD;&#xA; decide about how long it may take to get a connection. While he is waiting for a&#xD;&#xA; connection to open, he may return ERR_PENDING. When he returns an error from DoConnecting&#xD;&#xA; it will be shutdown and retried later." ObjectGUID="{f2257d18-4ada-4363-bc1d-7e646ef99211}" />
+    <Node Name="ReadRequest" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{41856f4c-cb22-4575-a1d9-0d0b7d39bc07}" />
+  </Node>
+  <Node Name="IDataSourceDriver4" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{aee9b118-16cc-4ab8-aa79-59900d1baea6}">
+    <Node Name="WriteRequest2" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6b1fa178-9b57-4613-9af9-c1ea0843bcec}" />
+    <Node Name="ReadRequest2" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{bb6856b0-8bda-47d3-bc66-e1a79931a275}" />
+  </Node>
+  <Node Name="IDataServerActionRecord" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{52c7f51d-10b4-4fdd-8af3-3ed548f56e3a}" />
+  <Node Name="IDataItemList" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c266d4f5-fcdd-45ec-9b7e-10dcc7be5860}">
+    <Node Name="Count" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{dcbc7a3a-dfd9-4675-bc34-fa53d5ee8faf}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{c6a716a6-4594-4faa-a4d2-054f0d17d3e0}" />
+    </Node>
+    <Node Name="CreateAndAdd" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{bf44253f-ef39-482f-a7da-7b6b1650206e}" />
+    <Node Name="GetItem" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{8c274f31-543c-4fd6-b659-230f878a12f9}" />
+    <Node Name="Clear" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{25362bd0-9ab5-4093-8183-f608e584def0}" />
+  </Node>
+  <Node Name="IDataSourceDriver3" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{ad64fa5c-e435-44e8-9ff8-b4b51753a57f}">
+    <Node Name="CredentialsNeeded" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{69e227ba-c70d-4ff7-ad1e-e5aceecba3eb}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{1a9fec37-5d2f-46c5-b898-ea5b8c650d09}" />
+    </Node>
+    <Node Name="AssignCredentials" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{66b8002d-2843-464f-a5eb-8d8ade07e2e2}" />
+    <Node Name="GetInterface" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Optionally returns an interface with the given id when it is implemented by the impelementing function block.&#xD;&#xA; The return value will be pointer to the requested interface" ObjectGUID="{4187e29a-ff85-45f8-96bf-2b4614886aae}" />
+  </Node>
+  <Node Name="DriverInitInfo" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7702a352-5ec1-432d-9864-e900a0e55295}" />
+  <Node Name="DataSourceState" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{40c25a70-118b-498b-9d3e-3a908d21d74c}" />
+  <Node Name="IDataGroup" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{505bf19f-755b-4640-8b89-4fbe1691ca1a}">
+    <Node Name="Use" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e01877d6-bf1f-4494-8bea-1a4d8239474f}" />
+    <Node Name="AddItem" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1d83024c-3754-4a00-903f-ede820868a2d}" />
+    <Node Name="Clear" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{bb5d72b1-42da-4084-9d68-fec2cdde396e}" />
+    <Node Name="Release" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{791fe535-61a4-479c-bfd7-3ea56cc339d3}" />
+  </Node>
+  <Node Name="ReturnValues" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{04ba0a24-9ddb-4351-8b26-65aece691f25}" />
+  <Node Name="IDataServer5" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e789ae9a-3d03-401d-b45f-682bb82ac617}">
+    <Node Name="GetRecordResult" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Returns the result of a record operation. For details &lt;see&gt;StartRecordMode&lt;/see&gt;. The result of this operation (if successfull) &#xD;&#xA; will be returned in &lt;see&gt;result&lt;/see&gt;" ObjectGUID="{d75b2541-0861-426f-ac38-d47b7e6e5721}" />
+    <Node Name="ReplayRecord" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Replays a previously recorded UseData/ReleaseData operation&#xD;&#xA; Calls to this method must be enclosed in &lt;see&gt;BeginDataConfiguration&lt;/see&gt; and &lt;see&gt;EndDataConfiguration&lt;/see&gt;" ObjectGUID="{4ee52321-8718-4587-827d-0a909d4b9616}" />
+    <Node Name="StartRecordMode" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Clients of the dataserver can call this method to start recording the following actions (UseData, ReleaseData).&#xD;&#xA; In between calls to this method and the according call to &lt;see&gt;GetRecordResult&lt;/see&gt; no real action will be done. &#xD;&#xA; Instead the action will only be recorded. The result can be retrieved using &lt;see&gt;GetRecordResult&lt;/see&gt;." ObjectGUID="{bc8ac564-4ffa-4764-a033-e5a75c65bdd8}" />
+    <Node Name="StartTempShutdown" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This method can be used for temporarily shutting down a dataserver connection. Due to the reason that &#xD;&#xA; this shutdown might take some cycles, the user of this method should wait until the operation is finished.&#xD;&#xA; This can be determined using the callback &lt;see&gt;cbShutdownDone&lt;/see&gt;. &#xD;&#xA; Calls to this method must be protected by calling BeginDataConfiguration/EndDataConfiguration around this call.&#xD;&#xA; To resume the normal operation of the datasource call the method &lt;see&gt;ResumeAfterTempShutdown&lt;/see&gt;." ObjectGUID="{9ee67b98-cc59-4a73-aba1-d935bc4d5141}" />
+    <Node Name="ResumeAfterTempShutdown" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This method can be called to resume the normal operation of a datasource after a call to &lt;see&gt;StartTempShutdown&lt;/see&gt;&#xD;&#xA; Calls to this method must be protected by calling BeginDataConfiguration/EndDataConfiguration around this call." ObjectGUID="{76acd820-6f2e-4fd8-808e-164f99313233}" />
+    <Node Name="DeleteRecord" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This method must be called on any instance of &lt;see&gt;IDataServerActionRecord&lt;/see&gt; retrieved from a call to &lt;see&gt;GetRecordResult&lt;/see&gt;" ObjectGUID="{fcf6eb61-60e1-4feb-874b-3d3998f584b9}" />
+    <Node Name="Flags" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7e728e00-cf0b-456b-8e0f-972ab31f384e}">
+      <Node Name="Set" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{ef0945a8-b122-4534-b896-db460431ac57}" />
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{001d3c20-40c3-44a1-8ee3-c8e6e3c60868}" />
+    </Node>
+  </Node>
+  <Node Name="DataItemQualityCodes" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e9d938d9-f088-471c-9972-78929ab608b1}" />
+  <Node Name="ITempShutdownResult" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{aa982606-1e93-4db6-94a1-d4c5fc1c5502}">
+    <Node Name="DataSourceName" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{644a4716-e2c2-4306-9ad1-bda70f21fd41}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{aa7cbd1a-e38a-483d-82a9-f93a70331102}" />
+    </Node>
+    <Node Name="Result" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{efcab157-b8ba-456c-a293-91ff7413707e}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" IsHidden="true" ObjectGUID="{65c28511-fc60-472a-840f-24385122f7d7}" />
+    </Node>
+  </Node>
+  <Node Name="TypeIds" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7806bf2a-f22b-4574-b914-5db6346600df}" />
+  <Node Name="DataSourceShutdownFlags" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0a946592-0845-43ae-9f1a-34355ab88371}" />
+  <Node Name="DataServerSettings" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{abfa9b16-07f2-4b54-988a-b7de7041f956}" />
+  <Node Name="IDataSourceDriver2" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{bd3d5b71-7956-4d3b-af1b-32a01408e565}">
+    <Node Name="ShutdownFinished" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{178c3d91-8dbf-43b2-9a01-6029ebad5045}" />
+  </Node>
+  <Node Name="IDataServerFrameManager" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{cdde3540-d811-4002-945b-a5fba3663526}">
+    <Node Name="GetCount" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This method will return the number of replacement infos" ObjectGUID="{dcddb9e6-5d72-4497-97c1-5c35360ac8d0}" />
+    <Node Name="GetReplacedPath" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{39fbfdfc-0c8f-4e83-adc2-80e5002e8b1b}" />
+    <Node Name="GetReplacementInfo" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{4361f68f-df7e-447d-9a61-b22ad89e4595}" />
+  </Node>
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="InterfaceIds" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a2be0530-e719-4bf9-b368-b332f5f692b3}" />
+  <Node Name="IDataServer4" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{eba485a2-46cf-4407-b308-fc2f0d5bb9e5}">
+    <Node Name="ReadItems" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{80fc61b3-185c-4a08-b787-c542551ad39c}" />
+    <Node Name="DeleteItemList" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a5c34b73-39aa-459e-b397-92ca81ce9d21}" />
+    <Node Name="WriteItems" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{eb14aebe-40ea-4c33-8068-a50bc6eea271}" />
+    <Node Name="CreateItemList" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1387e0f7-3fbd-49d3-89d3-9747ba7ac909}" />
+  </Node>
+  <Node Name="ICallback" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{50f25d9c-ebf2-475e-883a-0dc2b24596b8}">
+    <Node Name="Callback" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{907c4a5b-4afd-4bdd-9193-bef7c48ba64d}" />
+  </Node>
+  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{7a48f1f4-f8ea-4cb8-8dfe-2c19869f800f}" />
+  <Node Name="IGeneric" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{ccb26293-53e2-42c3-8bca-faee3a753239}">
+    <Node Name="GetInterface" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Optionally returns an interface with the given id when it is implemented by the impelementing function block.&#xD;&#xA; The return value will be pointer to the requested interface" ObjectGUID="{45818b52-2cbe-468a-8f26-02a0d8c32d63}" />
+  </Node>
+  <Node Name="DataSourceTransactionResult" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{dc14b710-0922-4ab8-8b99-f4e167d90c7d}" />
+  <Node Name="DataServerFlags" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0c4ab9fa-d5bf-4afd-99f8-9f83cb0d0eef}" />
+  <Node Name="DriverInitConstants" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a5e4398b-d646-43f2-9cb2-3f4f4ba6e6f1}" />
+  <Node Name="ICredentialsProvider" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6f4e74ef-b00f-489a-8889-a44c2c56a06d}">
+    <Node Name="IsGetCredentialsFinished" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Will return ERR_OK if the request is finished, ERR_PENDING if it is not yet &#xD;&#xA; finished, ERR_DS_RETRYLOGIN if the login should be tried again, another error code in case of an error" ObjectGUID="{e1fd39db-47ef-4422-b081-f5b0d3fba800}" />
+    <Node Name="StartGetCredentials" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Will return an id of the question for credentials. This id can be used in &#xD;&#xA; the following calls to &lt;see cref=&quot;IsGetCredentialsFinished&quot;/&gt;" ObjectGUID="{b26bce9a-89b6-4995-a664-f0817426ae9f}" />
+    <Node Name="GetCredentials" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Must return ERR_OK if called after a successfull &lt;see cref=&quot;IsGetCredentialsFinished&quot;&gt;" ObjectGUID="{9bea3acc-f3c7-4e32-a21c-33b8fa274488}" />
+    <Node Name="LoginFailed" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Will be called when a login failed due to wrong credentials&#xD;&#xA; The behaviour of the datasource afterwards depends on the return value. In case of &#xD;&#xA; ERR_PENDING, the logincycle will be started again with a call to GetCredentials.&#xD;&#xA; In all other cases the driver will go to it's error state." ObjectGUID="{8530095d-5451-4193-a18e-2d2dedac0325}" />
+  </Node>
+</Library>

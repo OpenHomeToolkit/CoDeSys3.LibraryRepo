@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="IoDriver EIPAcyclicService Interfaces, 3.5.2.0 (System)">
+  <Node Name="IIoDrvEIPAcylicServices" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="A interface for connected and unconnected messages." ObjectGUID="{7d932aea-1299-406a-86c3-18907c6a6c4a}">
+    <Node Name="IoDrvCloseClass3Connection" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="This method closes a connection, which was opened with IoDrvOpenClass3Connection. The return value is the error code of the driver." ObjectGUID="{6394c145-97a9-4a78-8a72-c5db1e933575}" />
+    <Node Name="IoDrvOpenClass3Connection" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="This message opens a connection. The return value is the error code of the driver." ObjectGUID="{1f0c2cee-d197-4970-bc24-3b67d93c7913}" />
+    <Node Name="IoDrvSendClass3ConnectedMessage" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="This method sends a connected class 3 connection. Before a message could be send, a connection must be established with IoDrvOpenClass3Connection.&#xD;&#xA;The return value is the error code of the driver." ObjectGUID="{d443fe5c-6b86-450e-8f13-0fa7eb2cca97}" />
+    <Node Name="IoDrvSendUnconnectedMessage" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment="This methoed send a unconnected message to an adapter. It is not neccessary to establish a connection before. Ther return value&#xD;&#xA;is the error code of the driver" ObjectGUID="{c5599bd1-be5b-4fe3-9217-476271d0b13a}" />
+  </Node>
+  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="ConnectedMessages" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{fcd65c40-1e63-46e1-a6f1-e279d37e0193}" />
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="UnconnectedMessages" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{130e8b18-0cd9-4405-abe2-ec03ff188bfe}" />
+  <Node Name="OperationStates" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7725e69d-bb0a-40ae-b575-0d2db02d8fc4}" />
+  <Node Name="EIP_CloseClass3Connection" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3f04dd44-bbd8-4aff-970b-e5f084cc893a}" />
+  <Node Name="InterfacesIDs" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{60c17fc7-d57a-4efd-9ff7-8597a8885772}" />
+  <Node Name="EIP_SendUnconnectedMessage" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{95196c9a-1875-4496-957e-5892ead9e878}" />
+  <Node Name="EIP_OpenClass3Connection" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{90ebfc1d-2357-4e5d-a8c3-f9be4306c0f7}" />
+  <Node Name="UnconnectedMessages" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{17ed0ef9-ff09-4f71-8737-78c3809c5615}" />
+  <Node Name="ConnectedMessages" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{90a203c0-7829-4917-8901-4d0f8256952c}" />
+  <Node Name="EIP_SendClass3ConnectedMessage" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{ce594cf9-7d32-4583-a58f-15fe31b4e87b}" />
+</Library>

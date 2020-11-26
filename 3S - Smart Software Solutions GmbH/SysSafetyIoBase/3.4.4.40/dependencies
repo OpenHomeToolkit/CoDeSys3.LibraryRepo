@@ -1,0 +1,5 @@
+CmpErrors, * (System)
+#SysShm
+#IoStandard
+#CmpLog
+#SysMem

@@ -1,0 +1,14 @@
+#IoDrvBase
+#IoStandard
+#Standard
+#SysCom
+#CmpLog
+#SysTarget
+#3SLicense#97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b
+IoDriver Parameter Interfaces, * (System)
+IoDriver Interfaces, * (System)
+#IoDrvModbusBase
+#CAA Device Diagnosis
+#CAA Types
+SysTypes2 Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)

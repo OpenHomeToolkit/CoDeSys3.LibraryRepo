@@ -1,0 +1,13 @@
+#CAA Types
+#IoStandard
+#IoDrvBase
+#Component Manager
+#CmpIecTask
+#SysMem
+#Standard
+#SysCpuHandling
+#CAA Device Diagnosis
+#CmpLog
+IoDriver Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+#CmpKBus

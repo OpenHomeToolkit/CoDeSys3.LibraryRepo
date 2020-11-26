@@ -1,0 +1,4 @@
+#IoStandard
+#IODrvEtherCAT
+CmpErrors2 Interfaces, * (System)
+SNCM ECATSlave Interfaces, * (3S - Smart Software Solutions GmbH)

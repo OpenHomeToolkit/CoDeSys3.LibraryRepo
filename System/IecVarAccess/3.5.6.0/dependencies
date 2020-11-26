@@ -1,0 +1,12 @@
+#CmpIecVarAccess
+#Component Manager
+#Collections
+#Standard
+#SymbolicVarsBase
+Base Interfaces, * (System)
+Collections Interfaces, * (System)
+Data Server Interfaces, * (System)
+SysTypes2 Interfaces, * (System)
+IecVarAccess2 Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+#SysMem

@@ -1,0 +1,7 @@
+#SysMem
+#SysSocket
+#Standard
+#CmpEventMgr
+#CmpApp
+SysTypes Interfaces, * (System)
+CmpErrors Interfaces, * (System)

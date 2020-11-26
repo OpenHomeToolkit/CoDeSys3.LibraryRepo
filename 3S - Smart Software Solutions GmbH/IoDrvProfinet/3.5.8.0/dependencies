@@ -1,0 +1,35 @@
+#CAA MemBlockMan
+#CmpEventMgr
+#SysTime
+#SysMem
+#CmpSettings
+#Standard
+#CmpLog
+#IoStandard
+#3SLicense#97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b
+#Rts Service Handler
+#CmpBinTagUtilIec
+#CmpSrv
+#CAA Types
+#CAA Device Diagnosis
+#CAA List And Tree
+#StringUtils
+IoDriver Parameter Interfaces, * (System)
+IoDriver Interfaces, * (System)
+IoDriver ProfiNet Interfaces, * (System)
+#CommFB
+#SysCpuHandling
+#CmpIecTask
+#CmpSchedule
+Base Interfaces, * (System)
+#IoDrvBase
+#Component Manager
+SysTypes2 Interfaces, * (System)
+#CmpApp
+#Profinet
+CmpErrors2 Interfaces, * (System)
+#RPC
+#SysSocket
+#SysTarget
+#ProfinetCommon
+#IoDrvProfinetBase

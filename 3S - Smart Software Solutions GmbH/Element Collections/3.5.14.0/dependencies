@@ -1,0 +1,11 @@
+#CAA FB Factory
+#StringUtils
+#SysMem
+CmpErrors2 Interfaces, * (System)
+#SysCpuHandling
+#CmpSchedule
+SysTime, 3.5.9.0 (System)
+#CmpEventMgr
+#CmpApp
+#CAA Types
+SysTypes2 Interfaces, * (System)

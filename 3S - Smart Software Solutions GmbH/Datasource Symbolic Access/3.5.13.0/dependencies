@@ -1,0 +1,14 @@
+Datasources Interfaces, * (3S - Smart Software Solutions GmbH)
+#SysMem
+CmpErrors2 Interfaces, * (System)
+#Component Manager
+#CmpLog
+#Standard
+#CmpPLCHandler
+SysTypes2 Interfaces, * (System)
+#CmpAsyncMgr
+#SysTask
+#Collections
+#CDSV3ProtocolUtils
+#StringUtils
+#CmpApp

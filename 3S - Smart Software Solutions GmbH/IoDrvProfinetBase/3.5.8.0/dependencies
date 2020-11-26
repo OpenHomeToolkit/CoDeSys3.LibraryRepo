@@ -1,0 +1,13 @@
+#IoStandard
+#Rts Service Handler
+SysTypes2 Interfaces, * (System)
+#CmpBinTagUtilIec
+#CmpSrv
+#ProfinetCommon
+#SysCpuHandling
+CmpErrors2 Interfaces, * (System)
+#CommFB
+#SysMem
+Base Interfaces, * (System)
+#StringUtils
+#Standard

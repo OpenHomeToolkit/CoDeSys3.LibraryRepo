@@ -1,0 +1,12 @@
+#CmpLog
+#Component Manager
+#IoDrvBase
+IoDriver Parameter Interfaces, * (System)
+#SysMem
+#IODrvEtherCAT
+IoDriver Interfaces, * (System)
+#CmpEventMgr
+#CmpIecTask
+CmpErrors2 Interfaces, * (System)
+SysTypes2 Interfaces, * (System)
+#IoStandard

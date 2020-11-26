@@ -1,0 +1,5 @@
+#Standard
+#SysMem
+#SysTimeRtc
+CmpErrors2 Interfaces, * (System)
+#Component Manager

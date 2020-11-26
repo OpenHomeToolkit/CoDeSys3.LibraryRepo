@@ -1,0 +1,9 @@
+#CmpIoMgr
+#IoStandard
+IoDriver DPV1C1 Interfaces, * (System)
+IoDriver DPV1C2 Interfaces, * (System)
+IoDriver Parameter Interfaces, * (System)
+IoDriver Interfaces, * (System)
+Base Interfaces, * (System)
+CmpErrors Interfaces, * (System)
+SysTypes Interfaces, * (System)

@@ -1,0 +1,5 @@
+#IoStandard
+#IODrvEtherCAT
+#CmpLog
+#Standard
+CmpErrors Interfaces, * (System)

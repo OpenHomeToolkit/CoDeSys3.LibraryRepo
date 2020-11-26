@@ -1,0 +1,6 @@
+#CmpRouter
+#SysMem
+#CmpLog
+#Standard
+#Component Manager
+CmpErrors Interfaces, * (System)

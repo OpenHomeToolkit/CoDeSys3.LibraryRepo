@@ -1,0 +1,12 @@
+#3S CANopenStack
+#IoStandard
+#SysMem
+#CAA CanL2
+#CAA CanL2I
+#CAA Types
+#CAA CANopen Stack
+#3SLicense#97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b
+#SysTarget
+#CANopenSafetyTypes
+SysTypes2 Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)

@@ -1,0 +1,6 @@
+#CmpLog
+#Standard
+#SysSocket
+SysTypes2 Interfaces, * (System)
+#SysMem
+CmpErrors2 Interfaces, * (System)

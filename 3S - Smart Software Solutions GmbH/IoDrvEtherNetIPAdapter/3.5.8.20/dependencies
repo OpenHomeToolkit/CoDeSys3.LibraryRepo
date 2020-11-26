@@ -1,0 +1,26 @@
+#CAA Types
+#IoDrvBase
+IoDriver Interfaces, * (System)
+#IoStandard
+#Standard
+SysTypes2 Interfaces, * (System)
+#Component Manager
+CmpErrors2 Interfaces, * (System)
+#CmpLog
+SysTime, 3.5.5.0 (System)
+#SysTarget
+#3SLicense#97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b
+#CIP Object
+#CIP Encapsulation
+#CAA MemBlockMan
+CommonPacketFormat Interfaces, * (3S - Smart Software Solutions GmbH)
+#CAA Callback
+#CmpIecTask
+#UDP
+#SysMem
+#SysSocket
+#MemoryUtils
+#CAA Device Diagnosis
+#CmpAsyncMgr
+#CAA List And Tree
+#IoDrvEthernet

@@ -1,0 +1,5 @@
+#CAA Types
+#CmpEventMgr
+#CmpSrv
+CmpErrors Interfaces, * (System)
+SysTypes Interfaces, * (System)

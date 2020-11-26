@@ -1,0 +1,9 @@
+Standard, 3.0.1.0 (System)
+Dataserver Interfaces 2, * (System)
+#SysTask
+#CmpLog
+#CmpEventMgr
+#SysSem
+#SysMem
+#SysFile
+SymbolicVarsBase, 3.3.0.20 (System)

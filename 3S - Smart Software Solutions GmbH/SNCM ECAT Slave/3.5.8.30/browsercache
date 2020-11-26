@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="SNCM ECAT Slave, 3.5.8.30 (3S - Smart Software Solutions GmbH)">
+  <Node Name="SNCM_ETC_Constants" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Internal global constants used in the SNCM abstraction layer for EtherCAT communication" ObjectGUID="{7c0a3e9b-b0ae-4c48-902b-a23728e8a4e1}" />
+  <Node Name="SNCM_ETC_VoE_SendReceive" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Function block for an abstract SNCM vendor over EtherCAT communication" ObjectGUID="{137c522b-50b7-4dc0-8be8-77582af8d4f3}" />
+  <Node Name="SNCM_ETC_Slave" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Function block for an abstract SNCM EtherCAT slave" ObjectGUID="{c0b91ac3-aba0-41a7-8708-58ededf859e7}">
+    <Node Name="VendorID" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{fd3a19ed-0529-435a-b444-eadea1581344}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{9859ba1e-58e4-40c2-8a65-e70386e336c3}" />
+    </Node>
+    <Node Name="SetReferences" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Method to set the references of an EtherCAT slave from a device configuration like slave address, master index, vendor ID&#xD;&#xA;  - returns ERR_OK if all of the EtherCAT slave parameters could be set&#xD;&#xA;  - returns ERR_FAILED if the slave could not be configured for e.g. due to an invalid config connector&#xD;&#xA;  - returns ERR_NOIDENTITY in case of a missing slave identity param in the configuration connector&#xD;&#xA;	- returns ERR_NOSLAVE if the slave could not be configured&#xD;&#xA; 	- returns ERR_NOVENDORID if the vendor ID could not be configured &#xD;&#xA; 	- returns ERR_NOMASTERIDX if the master index could not be configured&#xD;&#xA; 	- returns ERR_NOTINOPSTATE if the slave is not in operate state which is necessary for reading configuration parameter" ObjectGUID="{6e03b136-e749-4bbc-b130-fac0754d6699}" />
+    <Node Name="PhysSlaveAddr" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{5a4da1f3-19a6-4ef0-9861-0c9f9e2199cc}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{d95ba16a-b0be-44df-98f9-d661b87f7bb7}" />
+    </Node>
+    <Node Name="IsInOperateState" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d3468a3b-3bb3-4b1a-a884-e2ed46cd7c1b}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{b0d0a304-fc32-4dd2-80ef-8f73aec0e014}" />
+    </Node>
+    <Node Name="Com" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6b1afc1e-b838-485d-8d24-32704bf6d525}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{b184cb7c-9954-4b47-bc44-15eef87bb4f9}" />
+    </Node>
+  </Node>
+  <Node Name="Global Constants" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{fb5ed2aa-0604-4b71-89b8-bb9c735c2e15}" />
+  <Node Name="Function Blocks" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{f6a091e1-1c05-4b32-be35-0c2fd58856ee}" />
+  <Node Name="_3S_SNCM_ECATSlave" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{54c066d7-470c-4db6-93d0-41b2d2dbcaad}" />
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{64276aa1-e5fd-4e81-948a-7a41fdc36d96}" />
+</Library>

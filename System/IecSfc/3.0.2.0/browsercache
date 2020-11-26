@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="IecSfc, 3.0.2.0 (System)">
+  <Node Name="Globale_Variablen" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7d00dc68-581e-4823-b799-dc098fcdfab0}" />
+  <Node Name="SFCStepType" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1f531cbe-dbe2-4d66-851c-a8320c6082b0}" />
+  <Node Name="SFCActionType" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{67be36ce-6eec-4b6e-ab4f-96f976b71664}" />
+  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="SFCActionControl" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{25e509de-33d4-4447-93f8-c9e4ea381c8b}" ObjectGUID="{0c867fac-fc1d-4871-be89-4d8e70533e14}">
+    <Node Name="Reset" TypeGUID="{8ac092e5-3128-4e26-9e7e-11016c6684f2}" EmbeddedTypeGUIDs="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{a3d8588f-8be4-4eac-bc77-85356d3ebe42}" />
+  </Node>
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{f802dff9-6c18-4dd7-8f99-d83fc501f351}" />
+</Library>

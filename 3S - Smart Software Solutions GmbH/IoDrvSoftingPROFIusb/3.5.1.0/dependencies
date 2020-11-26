@@ -1,0 +1,15 @@
+#3SLicense#97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b
+IIoDrv, * (System)
+IIoDrvParameter, * (System)
+IBase, * (System)
+#SysTime
+#CmpLog
+#Component Manager
+#IoStandard
+#SysCpuHandling
+#Standard
+SysTypes, * (System)
+CmpErrors, * (System)
+#IoDrvBase
+#SysMem
+#CmpSoftingProfibus

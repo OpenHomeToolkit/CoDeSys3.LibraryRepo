@@ -1,0 +1,15 @@
+#CAA Behaviour Model
+#CAA NetBaseSrv
+#CAA Types
+CommonPacketFormat Interfaces, * (3S - Smart Software Solutions GmbH)
+#Standard
+#CmpLog
+#CAA MemBlockMan
+#SysMem
+#SysCpuHandling
+#SysSocket
+#CAA Callback
+SysTypes2 Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+#SysTimeCore
+#TCP

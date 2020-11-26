@@ -1,0 +1,10 @@
+#CmpSIL2
+#SysExcept
+#CANopenSafetyTypes
+#CANopenSafetyBase
+IoDriver Parameter Interfaces, * (System)
+IoDriver Interfaces, * (System)
+Base Interfaces, * (System)
+#IoStandard
+SysTypes2 Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)

@@ -1,0 +1,20 @@
+#CAA Types
+#IoStandard
+#IoDrvBase
+IoDriver Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+SysTypes2 Interfaces, * (System)
+#SysMem
+Base Interfaces, * (System)
+IoDriver Parameter Interfaces, * (System)
+#CAA Device Diagnosis
+IoDrvEthernet Interfaces, * (3S - Smart Software Solutions GmbH)
+#IoDrvEthernet
+#SysTimeCore
+#CAA DTUtility
+#3SLicense#97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b
+#SysTarget
+#Component Manager
+#CmpLog
+#CmpKNX
+IoDrvKnxStack Interfaces, * (3S - Smart Software Solutions GmbH)

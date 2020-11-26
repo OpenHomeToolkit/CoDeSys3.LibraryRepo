@@ -1,0 +1,43 @@
+#AC_ModuleBase
+#CAA FB Factory
+#CAA Mathematics
+#SysMem
+#CmpApp
+#StringUtils
+#SysFile
+CmpErrors2 Interfaces, * (System)
+#SysTimeCore
+#SysTimeRtc
+#Standard
+#FloatingPointUtils
+#MemoryUtils
+#SysCpuHandling
+#CmpSchedule
+#CmpEventMgr
+#CmpLog
+#CAA Types
+#Component Manager
+#CAA Storage
+#SysTask
+Storage, 3.5.7.0 (3S - Smart Software Solutions GmbH)
+#CAA Storage Imp
+#ElementCollections
+#Util
+Base Interfaces, * (System)
+#AC_Persistence
+SysTypes2 Interfaces, * (System)
+#CAA Memory
+#VisuSymbols
+#System_VisuElems#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemMeter#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsSpecialControls#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsWinControls#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemTextEditor#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemTrace#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuNativeControl#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsAlarm#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemCamDisplayer#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElem3DPath#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsDateTime#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemXYChart#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#system_visuinputs#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="FDT_ProfibusDriver, 3.4.0.0 (3S - Smart Software Solutions GmbH)">
+  <Node Name="ProfibusMasterState" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{385721e1-5418-480e-bc68-de136bd8524b}" />
+  <Node Name="GVL" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{69ecccbb-85d7-484b-82e1-eb574eb3f873}" />
+  <Node Name="ProfibusServices" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{40dcba88-37e2-4602-93ba-779ea8474f90}" />
+  <Node Name="ProfibusReadDiagnosisAsync" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{118a4119-fa47-4587-b236-2ebf025a68c3}" />
+  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{770b005a-b889-4f08-a263-9d9ca6181d31}" />
+  <Node Name="ProfibusReadWriteResponse" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c8344672-3184-4681-ac4e-0901a8459dc8}" />
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="ProfibusReadMasterResponseDPV1" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d6b9aa94-c70b-46e3-b447-6484e54af271}" />
+  <Node Name="ServiceL7Result" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0622adb7-1e4d-45c6-9f45-3397dc169fe0}" />
+  <Node Name="ProfibusReadMasterRequestDPV1" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{29e0d2bc-bb56-414e-989a-7bb053c5c454}" />
+  <Node Name="DriverState" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{76b90357-fbe1-4aea-aa6b-0d7b4af3cc0c}" />
+  <Node Name="ProfibusReadDiagnosisRequest" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{988f8b67-ebbb-4497-8757-9afa9f9dfc7e}" />
+  <Node Name="ProfibusReadDiagnosisResponse" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{fce64dc9-39a3-4396-8be6-8b3fea8a2cf7}" />
+  <Node Name="ProfibusReadWriteRequest" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{64923a09-a972-462c-ac90-4f4b62804797}" />
+  <Node Name="ProfibusReadMasterResponseDPV0" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1b0140da-3a00-4be6-b113-a58b4372123f}" />
+  <Node Name="BusAccessResult" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1b7b66f7-81d6-4f96-996a-408bebccaa1b}" />
+  <Node Name="ProfibusReadMasterRequestDPV0" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a88b3c40-41fb-4844-8bba-4f3b11bf5ab2}" />
+</Library>

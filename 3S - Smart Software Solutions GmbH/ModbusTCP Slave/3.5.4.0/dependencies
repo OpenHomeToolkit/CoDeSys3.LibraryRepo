@@ -1,0 +1,7 @@
+#IoStandard
+#Standard
+#CAA Types
+#SysSocket
+#SysMem
+CmpErrors Interfaces, * (System)
+SysTypes Interfaces, * (System)

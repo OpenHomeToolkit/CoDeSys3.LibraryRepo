@@ -1,0 +1,18 @@
+#IoStandard
+#IoDrvBase
+#CmpLog
+#SysMem
+#CmpSettings
+#SysShm
+#SysPci
+#CmpIecTask
+#SysSafetyIoBase
+#Standard
+#Component Manager
+#SysCpuHandling
+#CmpEventMgr
+#SysTask
+IoDriver Interfaces, * (System)
+IoDriver Parameter Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+SysTypes2 Interfaces, * (System)

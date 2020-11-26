@@ -1,0 +1,24 @@
+#SysFile
+#SysMem
+#CAA DTUtility
+#Standard
+#CmpLog
+#Component Manager
+#SM3_Basic
+#SM3_CNC
+#AC_ModuleBase
+Base Interfaces, * (System)
+#SysDir
+SysTypes2 Interfaces, * (System)
+#System_VisuElems#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemMeter#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsSpecialControls#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsWinControls#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemTextEditor#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemTrace#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuNativeControl#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsAlarm#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemCamDisplayer#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElem3DPath#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsDateTime#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#system_visuinputs#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae

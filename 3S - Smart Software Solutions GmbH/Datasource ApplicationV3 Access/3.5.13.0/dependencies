@@ -1,0 +1,17 @@
+Datasources Interfaces, * (3S - Smart Software Solutions GmbH)
+#SymbolicVarsBase
+SysTypes2 Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+#Standard
+#CmpLog
+#Component Manager
+#CmpBinTagUtilIec
+#SysFile
+#SysMem
+#CmpNameServiceClientIec
+#StringUtils
+#Collections
+#CDSV3ProtocolUtils
+#CmpChannelClientIec
+#SysTask
+Base Interfaces, * (System)

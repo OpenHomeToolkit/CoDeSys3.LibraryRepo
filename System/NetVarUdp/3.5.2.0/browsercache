@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="NetVarUdp, 3.5.2.0 (System)">
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="NetVarPDO_Rx_Udp" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{8701d491-b801-4125-99b2-ea30cf7a5a62}">
+    <Node Name="NewDataRec" TypeGUID="{8ac092e5-3128-4e26-9e7e-11016c6684f2}" EmbeddedTypeGUIDs="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{fb57d89e-6e40-4f08-8dcc-f843ee16ab92}" />
+    <Node Name="SetError" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{5a1b138f-4493-41ff-acf8-01f042b0efa8}" />
+  </Node>
+  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="UdpSendData" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{3a3ee2a9-414d-4794-9c01-d669fec617e7}" />
+  <Node Name="CLIENT_ACCEPT" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e5566c24-f735-46ac-9249-08c1f283eb17}" />
+  <Node Name="Udp specific" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{27f0d4db-d776-4f71-82a0-b77778164e66}" />
+  <Node Name="NetVarOD_Service_Udp" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{5afc849c-2ada-4aeb-ab24-f14f2d96700f}" />
+  <Node Name="NetVarPDO_Tx_Udp" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{e1efe8d8-5b5e-4a37-95e6-2b7515d72e7d}">
+    <Node Name="PDO_TxSendHard" TypeGUID="{8ac092e5-3128-4e26-9e7e-11016c6684f2}" EmbeddedTypeGUIDs="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{f0263cc4-a221-4e7e-b1ca-0fb7ac1b94f1}" />
+    <Node Name="SetError" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{8d284a76-13d7-446f-a058-b43f032c2489}" />
+    <Node Name="Acknowledge" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{994904a9-d3ee-4f20-8274-10481c18201a}" />
+  </Node>
+  <Node Name="NetVarManager_Udp_FB" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{b194b0c0-56c6-46e8-9530-051e9b96dc99}">
+    <Node Name="CloseSockets" TypeGUID="{8ac092e5-3128-4e26-9e7e-11016c6684f2}" EmbeddedTypeGUIDs="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{c3528386-7243-4f5c-8bd9-26aac429ac53}" />
+    <Node Name="FB_Exit" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{b3fcfb2b-8aab-4635-917a-f28eb62de313}" />
+    <Node Name="Send" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{b3c7875d-d85f-4b3c-8aa7-ac12a4774c4c}" />
+    <Node Name="UnregisterEvents" TypeGUID="{8ac092e5-3128-4e26-9e7e-11016c6684f2}" EmbeddedTypeGUIDs="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{1b37b374-a861-48bf-8aa5-a4656c9744f8}" />
+    <Node Name="EventCallback" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{b95554a2-a11e-4d32-9c11-ae2761749411}" />
+    <Node Name="RegisterEvents" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{ddee2d65-acc4-433f-89ff-2556a3c1d887}" />
+    <Node Name="NetVarGetConnectStatus_UDP" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{7ced53f0-bf9d-4d40-b6aa-9309540a3ec0}" />
+  </Node>
+  <Node Name="Global Variables" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{83550b11-cb9c-4657-9050-9ca7d9df873a}" />
+  <Node Name="UdpReceiveData" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{327d3f04-6120-4f0a-a2ce-60438f948c8d}" />
+  <Node Name="UdpSendTlg" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{c3519a04-b101-4f45-80db-53d09bf3af23}" />
+  <Node Name="GetIPAddress" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{7b36cef3-45b5-4135-8e62-f9f51fca1856}" />
+  <Node Name="UdpGetReceiveDataSize" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{e9908e78-c787-45bf-98d9-ba233406af2e}" />
+  <Node Name="POUs" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{70012431-49ed-488d-97c6-c9dd87304615}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{1df10d21-e660-4a0d-b9c6-d232abc6f69e}" />
+  <Node Name="CallbackTaskCodeNC" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{e15b1357-4534-46d2-8aeb-768deac6841b}" />
+  <Node Name="NetVar POUs" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{da3b8188-cd50-404e-8193-c401bb1a14ee}" />
+  <Node Name="NetVarTlgHeader_Udp" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{29b1ce68-97d3-4913-8743-59dfaa940225}" />
+  <Node Name="NetVarDataItem_Udp" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2d91968e-df59-467a-a7f9-e33d46a12f5c}" />
+  <Node Name="UdpOpenSendSocket" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{886551f3-66e1-441c-9396-9982a5ed72f0}" />
+  <Node Name="CallbackNetVar" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{a991945d-31f4-4eb6-9978-048a5b77c147}" />
+  <Node Name="CLIENT_REPLY" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c6b1587f-16f5-44df-adb1-65a0ec530c3b}" />
+  <Node Name="UdpOpenReceiveSocket" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{f51e7f82-c93b-46a4-a64d-d8dc159f76b9}" />
+  <Node Name="NetVarUDPError" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0f67fa47-ffa3-45f8-aa4e-d1e9209285c4}" />
+  <Node Name="NetVarTelegramm_Udp" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0b4b0c14-f0ec-4e65-a0f2-f5f8a4227f27}" />
+  <Node Name="Data types" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{8445958f-27dd-4fb9-ae44-71c91ba2c1f7}" />
+  <Node Name="Globale_Variablen" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{843e0d49-3135-433b-baf0-b7ad21011fc7}" />
+  <Node Name="NetVarUDPDiagStruct" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{759904a6-c258-45eb-b051-2ab063fc53e7}" />
+  <Node Name="Swap" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{c2db0708-ef73-4969-955b-d0c927fd3b2f}" />
+</Library>

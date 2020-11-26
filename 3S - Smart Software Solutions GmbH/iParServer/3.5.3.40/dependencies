@@ -1,0 +1,9 @@
+#CAA Behaviour Model
+#CommFB
+#SysMem
+#SysFile
+CmpErrors Interfaces, * (System)
+SysTypes Interfaces, * (System)
+#CmpLog
+#Standard
+#Component Manager

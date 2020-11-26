@@ -1,0 +1,20 @@
+#IoStandard
+#SysTarget
+#3SLicense#97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b
+#IoDrvBase
+#CAA Types
+#SysCpuHandling
+#SysTask
+#SysMem
+#SysShm
+#SysInt
+#CmpLog
+#Component Manager
+#SysPci
+#Standard
+Base Interfaces, * (System)
+CmpErrors Interfaces, * (System)
+IoDriver Interfaces, * (System)
+IoDriver Parameter Interfaces, * (System)
+#CAA Device Diagnosis
+#SysEvent

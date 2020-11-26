@@ -1,0 +1,25 @@
+#IoStandard
+#IoDrvCifXBase
+#CmpLog
+#Standard
+#SysMem
+#SysCpuHandling
+#CmpEventMgr
+#SysTask
+#3SLicense#97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b
+#FDT_ProfibusDriver
+#CmpIecTask
+#CAA Types
+#CAA Device Diagnosis
+#CAA List And Tree
+IoDriver Parameter Interfaces, * (System)
+IoDriver Interfaces, * (System)
+Base Interfaces, * (System)
+IoDriver Profibus Interfaces, * (System)
+IoDriver DPV1C1 Interfaces, * (System)
+IoDriver DPV1C2 Interfaces, * (System)
+IoDriver Hilscher Interfaces, * (System)
+#CommFB
+#CAA MemBlockMan
+CmpErrors2 Interfaces, * (System)
+SysTypes2 Interfaces, * (System)

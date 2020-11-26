@@ -1,0 +1,24 @@
+#IoStandard
+#CAA Types
+#CAA Callback
+#Standard
+#CmpLog
+#Component Manager
+#SysMem
+#IoDrvBase
+#CmpSettings
+#SysCpuHandling
+#CmpEventMgr
+#3SLicense#97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b
+#SysTime
+#CmpApp
+#CmpIecTask
+IoDriver Interfaces, * (System)
+IoDriver Parameter Interfaces, * (System)
+Base Interfaces, * (System)
+IoDriver Bus Control Interfaces, * (System)
+SysTypes2 Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+#CmpHilscherCIFX
+#MemoryUtils
+#CAA Device Diagnosis

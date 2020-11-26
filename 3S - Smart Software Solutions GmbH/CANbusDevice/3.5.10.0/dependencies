@@ -1,0 +1,11 @@
+#CAA Device Diagnosis
+#IoStandard
+CANbus, 3.5.7.0 (3S - Smart Software Solutions GmbH)
+#SysMem
+#IoDrvBase
+IoDriver Interfaces, * (System)
+SysTypes2 Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+#IoDriver Utility
+#CAA Types
+#SysCpuHandling

@@ -1,0 +1,29 @@
+#CAA Types
+#IoDrvCifXBase
+#CmpHilscherCIFX
+Base Interfaces, * (System)
+IoDriver ProfiNet Interfaces, * (System)
+SysTypes2 Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+#CmpEventMgr
+#3SLicense#97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b
+#IoStandard
+#Rts Service Handler
+#CmpSrv
+#CmpLog
+#SysMem
+#MemoryUtils
+#Standard
+#CommFB
+#ProfinetCommon
+#IoDrvProfinetBase
+#StringUtils
+#CmpSchedule
+#SysTime
+#SysCpuHandling
+#CAA Device Diagnosis
+#CmpBinTagUtilIec
+#CmpAsyncMgr
+#CmpIecTask
+#SysTarget
+#RPC

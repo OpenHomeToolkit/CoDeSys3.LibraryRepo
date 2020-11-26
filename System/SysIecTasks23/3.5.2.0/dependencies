@@ -1,0 +1,5 @@
+#Standard
+#CmpIecTask
+#CmpApp
+CmpErrors Interfaces, * (System)
+SysTypes Interfaces, * (System)

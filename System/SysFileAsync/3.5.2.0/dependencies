@@ -1,0 +1,4 @@
+#CmpAsyncMgr
+#SysFile
+CmpErrors Interfaces, * (System)
+SysTypes Interfaces, * (System)
